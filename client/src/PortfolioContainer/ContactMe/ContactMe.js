@@ -50,7 +50,8 @@ export default function ContactMe(props) {
         email,
         message,
       };
-      const res = await axios.post("http://localhost:5000/contact", data);
+      const baseUrl = process.env.REACT_APP_API_URL || "http://saikiran-portfolio-b078b74c7ad5.herokuapp.com:5000";
+      const res = await axios.post(`${baseUrl}/contact`, data);
       if (res.status === 200 && res.data.msg) {
         setBanner(res.data.msg);
         toast.success(res.data.msg);
