@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
-import { ReactComponent as XLogo} from '../../../assets/Profile/icons8-twitterx.svg';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
+// import { ReactComponent as XLogo} from '../../../assets/Profile/icons8-twitterx.svg';
 import "./Profile.css";
 
 const socialMediaIcons = [
@@ -21,7 +22,7 @@ const socialMediaIcons = [
   },
   {
     href: "https://twitter.com/SaikiranHS1",
-    icon: <XLogo />, // Use custom SVG for X logo
+    icon: faTwitter, // Use custom SVG for X logo
     label: "Twitter"
   },
   {
