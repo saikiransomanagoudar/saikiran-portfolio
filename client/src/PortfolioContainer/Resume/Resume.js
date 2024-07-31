@@ -80,13 +80,25 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="education">
       <ResumeHeading
         heading={"Illinois Institute of Technology"}
-        subHeading={"MASTER OF COMPUTER SCIENCE\nChicago, Illinois"}
+        subHeading={
+          <>
+            {"MASTER OF COMPUTER SCIENCE"}
+            <br />
+            {"Chicago, Illinois"}
+          </>
+        }
         fromDate={"Aug 2023"}
         toDate={"Dec 2025"}
       />
       <ResumeHeading
         heading={"Reva University"}
-        subHeading={"BACHELOR OF COMPUTER SCIENCE & INFORMATION TECHNOLOGY\nBengaluru, Karnataka"}
+        subHeading={
+          <>
+            {"BACHELOR OF COMPUTER SCIENCE & INFORMATION TECHNOLOGY"}
+            <br />
+            {"Bengaluru, Karnataka"}
+          </>
+        }
         fromDate={"Mar 2015"}
         toDate={"Jun 2019"}
       />
@@ -100,7 +112,13 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <ResumeHeading
         heading={"Headstarter AI"}
-        subHeading={"Software Engineer Fellow\nRemote"}
+        subHeading={
+          <>
+            {"Software Engineer Fellow"}
+            <br />
+            {"Remote"}
+          </>
+        }
         fromDate={"Jul 2024"} 
         toDate={"Present"}
       />
@@ -111,7 +129,13 @@ const Resume = (props) => {
       </div>
       <ResumeHeading
         heading={"Wipro Limited"}
-        subHeading={"Senior Software Engineer (QA)\nBengaluru, Karnataka"}
+        subHeading={
+          <>
+            {"Senior Software Engineer (QA)"}
+            <br />
+            {"Bengaluru, Karnataka"}
+          </>
+        }
         fromDate={"Sep 2019"}
         toDate={"Oct 2022"}
       />
@@ -123,7 +147,13 @@ const Resume = (props) => {
       </div>
       <ResumeHeading
         heading={"Wipro Limited"}
-        subHeading={"Software Engineer (QA)\nBengaluru, Karnataka"}
+        subHeading={
+          <>
+            {"Software Engineer (QA)"}
+            <br />
+            {"Bengaluru, Karnataka"}
+          </>
+        }
         fromDate={"Oct 2022"}
         toDate={"May 2023"}
       />
