@@ -8,37 +8,7 @@ import load1 from "../../../src/images/load.gif";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
-import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
-// import { ReactComponent as XLogo} from '../../assets/ContactMe/icons8-twitterx.svg'
 import "./ContactMe.css";
-
-const socialMediaIcons = [
-  {
-    href: "https://www.instagram.com/saikiran_hs/",
-    icon: faInstagram,
-    label: "Instagram"
-  },
-  {
-    href: "https://www.youtube.com/channel/UCvqP86Zm7Bda94gHnUtlK2g",
-    icon: faYoutube,
-    label: "YouTube"
-  },
-  {
-    href: "https://twitter.com/SaikiranHS1",
-    icon: faTwitter, // Use custom SVG for X logo
-    label: "Twitter"
-  },
-  {
-    href: "https://www.linkedin.com/in/saikiran-h-s/",
-    icon: faLinkedin,
-    label: "LinkedIn"
-  }
-];
 
 export default function ContactMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -80,7 +50,6 @@ export default function ContactMe(props) {
         email,
         message,
       };
-      //http://saikiran-portfolio-b078b74c7ad5.herokuapp.com:5000
       const baseUrl = process.env.REACT_APP_API_URL || "http://saikiran-portfolio-b078b74c7ad5.herokuapp.com:5000";
       const res = await axios.post(`${baseUrl}/contact`, data);
       if (res.status === 200 && res.data.msg) {
@@ -110,11 +79,34 @@ export default function ContactMe(props) {
             {" "}
             <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
           </h2>
-          {socialMediaIcons.map(({ href, icon, label }) => (
-                <a key={label} href={href} target="_blank" rel="noopener noreferrer">
-                  {typeof icon === 'string' ? <FontAwesomeIcon icon={icon} /> : icon}
-                </a>
-              ))}
+          <a
+            href="https://www.instagram.com/saikiran_hs/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCvqP86Zm7Bda94gHnUtlK2g"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa fa-youtube-square"></i>
+          </a>
+          <a
+            href="https://twitter.com/SaikiranHS1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/saikiran-h-s/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa fa-linkedin"></i>
+          </a>
         </div>
         <div className="back-form">
           <div className="img-back">
