@@ -80,13 +80,13 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="education">
       <ResumeHeading
         heading={"Illinois Institute of Technology"}
-        subHeading={"MASTER OF COMPUTER SCIENCE"}
+        subHeading={"MASTER OF COMPUTER SCIENCE\nChicago, Illinois"}
         fromDate={"Aug 2023"}
         toDate={"Dec 2025"}
       />
       <ResumeHeading
         heading={"Reva University"}
-        subHeading={"BACHELOR OF COMPUTER SCIENCE & INFORMATION TECHNOLOGY"}
+        subHeading={"BACHELOR OF COMPUTER SCIENCE & INFORMATION TECHNOLOGY\nBengaluru, Karnataka"}
         fromDate={"Mar 2015"}
         toDate={"Jun 2019"}
       />
@@ -100,7 +100,7 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <ResumeHeading
         heading={"Headstarter AI"}
-        subHeading={"Software Engineer Fellow"}
+        subHeading={"Software Engineer Fellow\nRemote"}
         fromDate={"Jul 2024"} 
         toDate={"Present"}
       />
@@ -111,7 +111,7 @@ const Resume = (props) => {
       </div>
       <ResumeHeading
         heading={"Wipro Limited"}
-        subHeading={"Senior Software Engineer (QA)"}
+        subHeading={"Senior Software Engineer (QA)\nBengaluru, Karnataka"}
         fromDate={"Sep 2019"}
         toDate={"Oct 2022"}
       />
@@ -123,7 +123,7 @@ const Resume = (props) => {
       </div>
       <ResumeHeading
         heading={"Wipro Limited"}
-        subHeading={"Software Engineer (QA)"}
+        subHeading={"Software Engineer (QA)\nBengaluru, Karnataka"}
         fromDate={"Oct 2022"}
         toDate={"May 2023"}
       />
@@ -175,7 +175,7 @@ const Resume = (props) => {
       <div className="resume-screen-container" key="interests">
         <ResumeHeading
           heading="Swimming"
-          description="Apart from being a tech enthusiast and a coder, I also enjoy swimming simply because it keeps be healthy throughout the day."
+          description="Apart from being a tech enthusiast and a coder, I also enjoy swimming simply because it keeps me healthy throughout the day."
         />
         <ResumeHeading
           heading="Trekking"
