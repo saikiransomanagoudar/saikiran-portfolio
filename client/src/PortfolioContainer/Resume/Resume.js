@@ -112,7 +112,7 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <ResumeHeading
         heading={"Headstarter AI"}
-        subHeading={"Software Engineer Fellow\nRemote"}
+        subHeading={"Software Engineer Fellow | Remote"}
         fromDate={"Jul 2024"} 
         toDate={"Present"}
       />
@@ -123,7 +123,7 @@ const Resume = (props) => {
       </div>
       <ResumeHeading
         heading={"Wipro Limited"}
-        subHeading={"Senior Software Engineer (QA)\nBengaluru, Karnataka"}
+        subHeading={"Senior Software Engineer (QA) | Bengaluru, Karnataka"}
         fromDate={"Sep 2019"}
         toDate={"Oct 2022"}
       />
@@ -135,7 +135,7 @@ const Resume = (props) => {
       </div>
       <ResumeHeading
         heading={"Wipro Limited"}
-        subHeading={"Software Engineer (QA)\nBengaluru, Karnataka"}
+        subHeading={"Software Engineer (QA) | Bengaluru, Karnataka"}
         fromDate={"Oct 2022"}
         toDate={"May 2023"}
       />
