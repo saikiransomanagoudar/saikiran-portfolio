@@ -13,7 +13,7 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
   const SCREEN_CONSTANTS = {
     description:
-      "Experienced in Cloud Technology – AWS, Solid experience with API/Webservices, SoapUI/Postman, IBM Integration Bus (IIB). Have good grip on Unix/Linux Platform commands. Ability to build positive working relationships with Internal teams and Vendors. Have expertise in C, Java, Python, JavaScript, ReactJS.",
+      "Welcome to my profile! My name is Saikiran. I'm a graduating senior in Computer Science interested in changing the world! I would like to use my skills to create positive solutions to complex problems, especially in Cloud Computing and Artificial Intelligence. I have experience in Full Stack Web Development, Amazon Web Services, REST API, SoapUI, Postman, IBM Integration Bus (IIB). Solid expertise in C, Java, Python, JavaScript (and it's frameworks - ReactJS, NextJS, React Native). \nOutside of work, I love to read books about technology, self-help, biographies and auto-biographies. Please feel free to connect with me! I would love to learn more about you.",
     highlights: {
       bullets: [
         "Full Stack Web Development",
