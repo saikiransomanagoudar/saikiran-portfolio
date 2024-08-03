@@ -11,7 +11,7 @@ export default function Profile() {
           <div className="colz">
             <div className="colz-icon">
               <a
-                href="https://www.instagram.com/saikiran_hs/"
+                href="https://www.instagram.com/saikiransomanagoudar/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -25,14 +25,14 @@ export default function Profile() {
                 <i className="fa fa-youtube-square"></i>
               </a>
               <a
-                href="https://twitter.com/SaikiranHS1"
+                href="https://twitter.com/ssomanagoudar1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fa fa-twitter"></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/saikiran-h-s/"
+                href="https://www.linkedin.com/in/saikiransomanagoudar"
                 target="_blank"
                 rel="noopener noreferrer"
               >
