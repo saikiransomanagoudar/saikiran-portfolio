@@ -1,0 +1,32 @@
+.footer-container{
+    height: 17.8%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-parent{
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    z-index: 1;
+}
+
+.footer-parent img{
+    max-width: 100%;
+    height: 120px;
+    z-index: 1;
+}
+
+/* iPad Pro */
+@media only screen and (max-width: 1110px) {
+    .footer-parent {
+        display: flex;
+        align-items: flex-end;
+    }
+    .footer-parent img {
+        transform: translateY(50px);
+        width: 100%;
+    }
+}
