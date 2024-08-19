@@ -56,9 +56,7 @@ export default function Profile() {
                   steps={[
                     "Software Engineer Fellow 💻",
                     1000,
-                    "Enthusiastic Developer 😎",
-                    1000,
-                    "ReactJS Developer 📱",
+                    "Enthusiastic Developer 🚀",
                     1000,
                   ]}
                 />
