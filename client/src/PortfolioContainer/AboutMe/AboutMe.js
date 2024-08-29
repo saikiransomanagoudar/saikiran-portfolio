@@ -61,7 +61,7 @@ export default function AboutMe(props) {
                 Hire Me{" "}
               </button>
               <a
-                href="https://docs.google.com/document/d/11Aq8qunF7iYcQ_L6a-QEh1vQf21mURcz"
+                href="https://drive.google.com/drive/u/0/folders/1Xxgsco8TryKshZDGejkDoTKnyi4sBYHx"
                 target="_blank"
                 rel="noopener noreferrer"
               >
