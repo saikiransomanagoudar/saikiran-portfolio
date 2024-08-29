@@ -74,7 +74,7 @@ export default function Profile() {
               Hire Me
             </button>
             <a
-              href="https://drive.google.com/drive/u/0/folders/1Xxgsco8TryKshZDGejkDoTKnyi4sBYHx"
+              href="https://drive.google.com/file/d/1ByaPTu7N8xl-UUcUlgzt6SOBds0IepqF/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               download={"Saikiran_Somanagoudar_Resume.pdf"}
