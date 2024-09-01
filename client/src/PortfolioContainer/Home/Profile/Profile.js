@@ -71,7 +71,7 @@ export default function Profile() {
               className="btn primary-btn"
               onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             >
-              Hire Me
+              Contact Me
             </button>
             <a
               href="https://drive.google.com/file/d/1kTu9gWG8IEXxm7lQi-ZOt7N3c6YqtsjR/view?usp=sharing"
