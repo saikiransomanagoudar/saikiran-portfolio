@@ -94,11 +94,11 @@ export default function ContactMe(props) {
             <i className="fa fa-youtube-square"></i>
           </a>
           <a
-            href="https://twitter.com/ssomanagoudar1"
+            href="https://github.com/saikiransomanagoudar"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa fa-twitter"></i>
+            <i className="fa fa-github"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/saikiransomanagoudar"

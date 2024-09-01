@@ -50,29 +50,29 @@ const Resume = (props) => {
 
   const programmingSkillDetails = [
     { skill: "Core Java", ratingPercentage: 95 },
-    { skill: "C Programming", ratingPercentage: 90},
-    { skill: "MongoDB", ratingPercentage: 80 },
+    { skill: "Python", ratingPercentage: 85 },
+    { skill: "C Programming", ratingPercentage: 80},
+    { skill: "MongoDB", ratingPercentage: 60 },
     { skill: "HTML", ratingPercentage: 85 },
-    { skill: "CSS", ratingPercentage: 80 },
+    { skill: "CSS", ratingPercentage: 85 },
     { skill: "JavaScript", ratingPercentage: 80 },
-    { skill: "ReactJS", ratingPercentage: 80 },
   ];
 
   const projectDetails = [
     {
-      title: "Personal Portofolio Website",
-      duration: { fromDate: "2023", toDate: "2024" },
+      title: "Pantry Tracker | Inventory Management Application",
+      duration: { fromDate: "Jul 2024", toDate: "Aug 2024" },
       description:
-        "A Personal Portfolio website to showcase all my details and projects at one place",
-      subHeading: "Technologies Used: React.js, Bootstrap",
+        "Pantry Tracker is an inventory management application that helps users to keep track of their pantry items. Users can add, update, delete, and search for items in their pantry.  The app includes user authentication features, allowing multiple users to securely track and manage their pantry inventory.",
+      subHeading: "Technologies Used: Next.js, React.js, Tailwind CSS, Node.js, Firebase, Vercel",
     },
     {
-      title: "Urban Mobility Transportation App",
-      duration: { fromDate: "2023", toDate: "2023" },
+      title: "Recallect | AI Flashcard SaaS Application",
+      duration: { fromDate: "Aug 2024", toDate: "Aug 2024" },
       description:
-        "This project focuses on developing an interactive web application dedicated to enhancing urban mobility and transportation. The application integrates various modules, each designed to address specific needs within the urban transportation landscape.",
+        "Developed a comprehensive Next.js flashcard application with a focus on user experience and advanced features. The project integrated Firebase for robust data storage, Clerk for secure and customizable user authentication, and OpenAI to generate AI-powered flashcards. Implemented Stripe for secure payment processing, enabling a Pro Plan for users.",
       subHeading:
-        "Technologies Used: Frontend-React.js for building the user interface, Backend-Node.js, Database-MongoDB, Google Maps JavaScript API for mapping functionalities",
+        "Technologies Used: Next.js, React.js, Stripe, Clerk, OpenAI, Firebase, Vercel",
     },
   ];
 

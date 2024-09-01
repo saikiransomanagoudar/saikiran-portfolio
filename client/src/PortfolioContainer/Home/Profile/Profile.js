@@ -56,9 +56,7 @@ export default function Profile() {
                   steps={[
                     "Software Engineer Fellow 💻",
                     1000,
-                    "Enthusiastic Developer 😎",
-                    1000,
-                    "ReactJS Developer 📱",
+                    "Enthusiastic Developer 🚀",
                     1000,
                   ]}
                 />
@@ -73,10 +71,10 @@ export default function Profile() {
               className="btn primary-btn"
               onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             >
-              Hire Me
+              Contact Me
             </button>
             <a
-              href="https://docs.google.com/document/d/11Aq8qunF7iYcQ_L6a-QEh1vQf21mURcz"
+              href="https://drive.google.com/file/d/1kTu9gWG8IEXxm7lQi-ZOt7N3c6YqtsjR/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               download={"Saikiran_Somanagoudar_Resume.pdf"}
