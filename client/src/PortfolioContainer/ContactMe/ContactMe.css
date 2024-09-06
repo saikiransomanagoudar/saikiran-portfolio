@@ -146,29 +146,25 @@ button .load img {
 
 .scroll-to-home button {
     background: none; /* Remove background */
-    color: darkorange; /* Change arrow color to dark orange */
+    color: darkorange; /* Arrow color */
     border: none;
-    font-size: 24px; /* Increase arrow size */
+    font-size: 32px; /* Increase arrow size */
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
+    transition: transform 0.3s ease; /* Add smooth hover effect */
+}
+
+.scroll-to-home button:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
 }
 
 .scroll-to-home button i {
-    animation: glow 1s infinite alternate; /* Apply glow effect */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for a professional look */
 }
 
-/* Glow animation */
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 5px darkorange, 0 0 10px darkorange, 0 0 15px darkorange, 0 0 20px darkorange;
-    }
-    100% {
-        text-shadow: 0 0 10px darkorange, 0 0 20px darkorange, 0 0 30px darkorange, 0 0 40px darkorange;
-    }
-}
 
 
 @media screen and (min-width: 940px) {
