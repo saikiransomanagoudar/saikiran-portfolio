@@ -148,13 +148,18 @@ button .load img {
     background: none; /* Remove background */
     color: darkorange; /* Arrow color */
     border: none;
-    font-size: 32px; /* Increase arrow size */
+    font-size: 40px; /* Increase arrow size */
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
     transition: transform 0.3s ease; /* Add smooth hover effect */
+    outline: none; /* Remove focus outline */
+}
+
+.scroll-to-home button:focus {
+    outline: none; /* Ensure no outline on focus */
 }
 
 .scroll-to-home button:hover {
@@ -164,8 +169,6 @@ button .load img {
 .scroll-to-home button i {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for a professional look */
 }
-
-
 
 @media screen and (min-width: 940px) {
     .back-form {
