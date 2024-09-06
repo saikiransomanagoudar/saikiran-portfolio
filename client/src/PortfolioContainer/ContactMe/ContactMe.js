@@ -136,11 +136,11 @@ export default function ContactMe(props) {
           </form>
         </div>
       </div>
-      {/* <div className="scroll-to-home">
+      <div className="scroll-to-home">
         <button onClick={() => ScrollService.scrollHandler.scrollToHome()}>
           <i className="fa fa-arrow-up"></i>
         </button>
-      </div> */}
+      </div>
     </div>
   );
 }
