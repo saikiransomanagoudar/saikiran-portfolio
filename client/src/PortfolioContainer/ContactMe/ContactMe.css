@@ -137,15 +137,15 @@ button .load img {
     color: green;
 }
 
-/* .scroll-to-home {
+.scroll-to-home {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000; /* Ensure it stays above other content */
-/* } 
+ } 
 
 
-/* .scroll-to-home button {
+.scroll-to-home button {
     background-color: darkorange;
     color: white;
     border: none;
@@ -161,7 +161,7 @@ button .load img {
 .scroll-to-home button i {
     margin-right: 5px;
 } 
-*/
+
 
 
 @media screen and (min-width: 940px) {
