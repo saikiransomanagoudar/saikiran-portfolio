@@ -184,7 +184,6 @@ const Resume = (props) => {
       <br />
       <br />
       <br />
-
       <div className="resume-screen-container" key="interests">
         <ResumeHeading
           heading="Swimming"
@@ -199,6 +198,8 @@ const Resume = (props) => {
           description="I like to challenge my reflexes a lot while competing in football, and action shooter games, pushing the rank and having interactive gaming sessions excites me the most."
         />
       </div>
+      <br />
+      <br />
       <div className="resume-screen-container" key="extracurriculars">
       <a href="https://data.typeracer.com/pit/profile?user=saikiran1&ref=badge" target="_top"><img src="https://data.typeracer.com/misc/badge?user=saikiran1" border="0" alt="TypeRacer.com scorecard for user saikiran1"/></a>
       </div>
