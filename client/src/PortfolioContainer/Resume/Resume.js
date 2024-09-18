@@ -124,7 +124,7 @@ const Resume = (props) => {
       </div>
       <ResumeHeading
         heading={"Wipro Limited"}
-        subHeading={"Senior Software Engineer (QA) | Bengaluru, Karnataka"}
+        subHeading={"Senior Software Engineer | Bengaluru, Karnataka"}
         fromDate={"Sep 2019"}
         toDate={"Oct 2022"}
       />
@@ -136,7 +136,7 @@ const Resume = (props) => {
       </div>
       <ResumeHeading
         heading={"Wipro Limited"}
-        subHeading={"Software Engineer (QA) | Bengaluru, Karnataka"}
+        subHeading={"Software Engineer | Bengaluru, Karnataka"}
         fromDate={"Oct 2022"}
         toDate={"May 2023"}
       />
