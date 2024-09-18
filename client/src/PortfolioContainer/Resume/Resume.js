@@ -46,7 +46,7 @@ const Resume = (props) => {
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
     { label: "Projects", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
-    { label: "Extracurriculars", logoSrc: "typing.svg"}
+    { label: "Extracurriculars", logoSrc: "typing_1.svg"}
   ];
 
   const programmingSkillDetails = [
