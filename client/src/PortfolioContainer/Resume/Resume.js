@@ -46,6 +46,7 @@ const Resume = (props) => {
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
     { label: "Projects", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
+    { label: "Extracurriculars", logoSrc: "typing.svg"}
   ];
 
   const programmingSkillDetails = [
@@ -197,6 +198,9 @@ const Resume = (props) => {
           heading="Competitive Gaming"
           description="I like to challenge my reflexes a lot while competing in football, and action shooter games, pushing the rank and having interactive gaming sessions excites me the most."
         />
+      </div>
+      <div className="resume-screen-container" key="extracurriculars">
+      <a href="https://data.typeracer.com/pit/profile?user=saikiran1&ref=badge" target="_top"><img src="https://data.typeracer.com/misc/badge?user=saikiran1" border="0" alt="TypeRacer.com scorecard for user saikiran1"/></a>
       </div>
     </div>,
   ];
