@@ -80,20 +80,6 @@ export default function ContactMe(props) {
             <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
           </h2>
           <a
-            href="https://www.instagram.com/saikiransomanagoudar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-instagram"></i>
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCvqP86Zm7Bda94gHnUtlK2g"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-youtube-square"></i>
-          </a>
-          <a
             href="https://github.com/saikiransomanagoudar"
             target="_blank"
             rel="noopener noreferrer"
@@ -106,6 +92,20 @@ export default function ContactMe(props) {
             rel="noopener noreferrer"
           >
             <i className="fa fa-linkedin"></i>
+          </a>
+          {/* <a
+            href="https://www.instagram.com/saikiransomanagoudar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa fa-instagram"></i>
+          </a> */}
+          <a
+            href="https://www.youtube.com/channel/UCvqP86Zm7Bda94gHnUtlK2g"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa fa-youtube-square"></i>
           </a>
         </div>
         <div className="back-form">
