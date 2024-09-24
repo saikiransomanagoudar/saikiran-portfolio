@@ -11,20 +11,6 @@ export default function Profile() {
           <div className="colz">
             <div className="colz-icon">
               <a
-                href="https://www.instagram.com/saikiransomanagoudar/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCvqP86Zm7Bda94gHnUtlK2g"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-youtube-square"></i>
-              </a>
-              <a
                 href="https://github.com/saikiransomanagoudar"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -37,6 +23,20 @@ export default function Profile() {
                 rel="noopener noreferrer"
               >
                 <i className="fa fa-linkedin"></i>
+              </a>
+              {/* <a
+                href="https://www.instagram.com/saikiransomanagoudar/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-instagram"></i>
+              </a> */}
+              <a
+                href="https://www.youtube.com/channel/UCvqP86Zm7Bda94gHnUtlK2g"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-youtube-square"></i>
               </a>
             </div>
           </div>
