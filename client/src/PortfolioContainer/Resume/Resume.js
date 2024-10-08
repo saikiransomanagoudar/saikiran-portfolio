@@ -120,6 +120,24 @@ const Resume = (props) => {
     );
   };
 
+  const renderProjects = () => {
+    return (
+      <div className="projects-container">
+        {projectDetails.map((projectDetails, index) => (
+          <ResumeHeading
+            key={index}
+            heading={projectDetails.title}
+            subHeading={projectDetails.subHeading}
+            description={projectDetails.description}
+            fromDate={projectDetails.duration.fromDate}
+            toDate={projectDetails.duration.toDate}
+          />
+        ))}
+      </div>
+    );
+  };
+  
+
   const projectDetails = [
     {
       title: "Pantry Tracker | Inventory Management Application",
@@ -135,7 +153,15 @@ const Resume = (props) => {
       description:
         "Developed a comprehensive Next.js flashcard application with a focus on user experience and advanced features. The project integrated Firebase for robust data storage, Clerk for secure and customizable user authentication, and OpenAI to generate AI-powered flashcards. Implemented Stripe for secure payment processing, enabling a Pro Plan for users.",
       subHeading:
-        "Technologies Used: Next.js, React.js, Stripe, Clerk, OpenAI, Firebase, Vercel"
+        "Technologies Used: Next.js, React.js, Stripe, OpenAI, Firebase, Clerk, Vercel"
+    },
+    {
+      title: "AI Rate My Professor Chatbot | ProfBot",
+      duration: { fromDate: "Aug 2024", toDate: "Aug 2024" },
+      description:
+        "ProfBot is a chatbot that helps students in choosing the right professor for their academic needs based on rating, subject, and skills.",
+      subHeading:
+        "Technologies Used: Next.js, React.js, Python, Node.js, Python, PineconeDB, Vercel"
     }
   ];
 
@@ -214,16 +240,7 @@ const Resume = (props) => {
       {renderProgrammingSkills()}
     </div>,
     <div className="resume-screen-container" key="projects">
-      {projectDetails.map((projectDetails, index) => (
-        <ResumeHeading
-          key={index}
-          heading={projectDetails.title}
-          subHeading={projectDetails.subHeading}
-          description={projectDetails.description}
-          fromDate={projectDetails.duration.fromDate}
-          toDate={projectDetails.duration.toDate}
-        />
-      ))}
+      {renderProjects()}
     </div>,
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
