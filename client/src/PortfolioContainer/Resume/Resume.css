@@ -38,7 +38,28 @@
 }
 
 .resume-details-carousal {
-  transition: transform 1s ease-out;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.active-section {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.inactive-section {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .bullet-container {
@@ -154,17 +175,29 @@
 
 .skill-parent {
   display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%; /* Ensure the skill bar takes full width */
 }
 
 .programming-skills-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-y: auto; /* Ensures all skills are visible by scrolling if needed */
+  max-height: 400px; /* Set a maximum height if needed */
+}
+
+.programming-skills-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.programming-skills-container::-webkit-scrollbar-thumb {
+  background-color: #ff5823; /* Customize the scrollbar thumb */
+  border-radius: 4px;
 }
 
 .skill-percentage {
@@ -189,14 +222,115 @@
   color: #ff5823;
 }
 
-/* IPAD PRO RESPONSIVENESS */
-@media only screen and (max-width: 1110px) {
+.skills-category {
+  margin-bottom: 20px;
+  width: 100%; /* Ensure the category takes full width */
+}
+
+.skills-category h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff5823;
+  margin-bottom: 10px;
+}
+
+/* General Mobile Adjustments */
+@media only screen and (max-width: 768px) {
   .resume-card {
-    width: 880px;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width for resume card */
+    padding: 0 15px;
   }
 
+  /* Ensure container has full width for each section */
   .resume-bullet-details {
-    padding: 0 0 0 70px;
+    width: 100%; /* Full width for the right content */
+    padding: 0;
+    flex-grow: 1; /* Ensure this section expands properly */
+    min-width: 100%; /* Force the right side to take full width */
+  }
+
+  /* Programming Skills Section */
+  .programming-skills-container {
+    width: 100%; /* Full width */
+    max-height: 400px; /* Limit height to make it scrollable */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .skills-category {
+    width: 100%; /* Full width for each skill category */
+    margin-bottom: 20px;
+  }
+
+  .skill-parent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%; /* Full width for each skill */
+  }
+
+  .skill-percentage {
+    height: 12px;
+    width: 60%; /* Skill bar width */
+  }
+
+  /* Extracurriculars Section */
+  .resume-screen-container {
+    width: 100%; /* Full width for extracurriculars and all other sections */
+    padding: 0 15px; /* Padding for consistency */
+    min-width: 100%; /* Ensure minimum width to match the layout */
+  }
+
+  /* Ensure the badge in extracurriculars fits */
+  .resume-screen-container a img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Bullet Navigation Fix */
+  .bullet-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; /* Full width for bullet navigation */
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-y: auto; /* Allows vertical scrolling */
+    max-height: 400px; /* Set a maximum height for the container */
+  }
+
+  .projects-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .projects-container::-webkit-scrollbar-thumb {
+    background-color: #ff5823; /* Customize the scrollbar thumb */
+    border-radius: 4px;
+  }
+
+  .bullets {
+    width: 100%;
+  }
+
+  .resume-main-heading span {
+    font-size: 16px;
+  }
+
+  .resume-sub-heading {
+    font-size: 14px;
+  }
+
+  .resume-description-text {
+    font-size: 13px;
   }
 }
 
@@ -218,13 +352,15 @@
     flex-direction: column;
     margin: 30px 0;
     align-items: center;
-    width: 90%;
+    width: 100%; /* Full width */
   }
 
   .resume-bullet-details {
-    height: 360px;
+    height: auto; /* Auto height for expanding sections */
     padding: 0;
-    width: fit-content;
+    width: 100%; /* Full width for the right side */
+    flex-grow: 1; /* Ensure full use of width */
+    min-width: 100%; /* Prevent shrinking */
   }
 
   .resume-bullets {
@@ -234,5 +370,17 @@
 
   .selected-bullet {
     width: 100%;
+  }
+}
+
+/* Desktop Adjustments */
+@media only screen and (min-width: 1200px) {
+  .resume-card {
+    width: 1000px; /* Set a fixed width for larger screens */
+    padding: 0 20px;
+  }
+
+  .resume-bullet-details {
+    padding: 0 0 0 70px;
   }
 }

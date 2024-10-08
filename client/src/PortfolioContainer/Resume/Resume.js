@@ -1,13 +1,52 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
 
 const Resume = (props) => {
-  /* STATES */
+  const programmingSkillsRef = useRef(null);
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
-  const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
+
+  const programmingSkillDetails = [
+    {
+      category: "Languages",
+      skills: [
+        { skill: "Java", ratingPercentage: 95 },
+        { skill: "Python", ratingPercentage: 85 },
+        { skill: "JavaScript", ratingPercentage: 80 },
+        { skill: "C Programming", ratingPercentage: 80 }
+      ]
+    },
+    {
+      category: "Frameworks",
+      skills: [
+        { skill: "React.js", ratingPercentage: 85 },
+        { skill: "Next.js", ratingPercentage: 80 },
+        { skill: "Tailwind CSS", ratingPercentage: 85 },
+        { skill: "Node.js", ratingPercentage: 70 }
+      ]
+    },
+    {
+      category: "Databases",
+      skills: [
+        { skill: "MySQL", ratingPercentage: 75 },
+        { skill: "MongoDB", ratingPercentage: 60 },
+        { skill: "Firebase", ratingPercentage: 60 },
+        { skill: "PostgreSQL", ratingPercentage: 50 },
+        { skill: "Pinecone", ratingPercentage: 20 }
+      ]
+    },
+    {
+      category: "Libraries",
+      skills: [
+        { skill: "OpenAI API", ratingPercentage: 80 },
+        { skill: "LangChain", ratingPercentage: 75 },
+        { skill: "Stripe API", ratingPercentage: 70 },
+        { skill: "Clerk API", ratingPercentage: 70 }
+      ]
+    }
+  ];
 
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
@@ -16,27 +55,34 @@ const Resume = (props) => {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
+  useEffect(() => {
+    const carousalElement = document.querySelector(".resume-details-carousal");
+    if (carousalElement) {
+      carousalElement.style.height = "auto"; // Adjust height dynamically
+    }
+  }, [selectedBulletIndex]);
+
   const ResumeHeading = (props) => {
     return (
       <div className="resume-heading">
         <div className="resume-main-heading">
           <div className="heading-bullet"></div>
-            <span>{props.heading ? props.heading : ""}</span>
-            {props.fromDate && props.toDate ? (
-              <div className="heading-date">
-                {props.fromDate + "-" + props.toDate}
-              </div>
-            ) : (
-              <div></div>
-            )}
+          <span>{props.heading ? props.heading : ""}</span>
+          {props.fromDate && props.toDate ? (
+            <div className="heading-date">
+              {props.fromDate + "-" + props.toDate}
             </div>
-          <div className="resume-sub-heading">
-            <span>{props.subHeading ? props.subHeading : ""}</span>
-          </div>
-          <div className="resume-heading-description">
-            <span>{props.description ? props.description : ""}</span>
-          </div>
+          ) : (
+            <div></div>
+          )}
         </div>
+        <div className="resume-sub-heading">
+          <span>{props.subHeading ? props.subHeading : ""}</span>
+        </div>
+        <div className="resume-heading-description">
+          <span>{props.description ? props.description : ""}</span>
+        </div>
+      </div>
     );
   };
 
@@ -44,20 +90,35 @@ const Resume = (props) => {
     { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
+    { label: "Personal Projects", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
-    { label: "Extracurriculars", logoSrc: "typing.svg"}
+    { label: "Extracurriculars", logoSrc: "typing.svg" }
   ];
 
-  const programmingSkillDetails = [
-    { skill: "Core Java", ratingPercentage: 95 },
-    { skill: "Python", ratingPercentage: 85 },
-    { skill: "C Programming", ratingPercentage: 80},
-    { skill: "MongoDB", ratingPercentage: 60 },
-    { skill: "HTML", ratingPercentage: 85 },
-    { skill: "CSS", ratingPercentage: 85 },
-    { skill: "JavaScript", ratingPercentage: 80 },
-  ];
+  // Function to render programming skills
+  const renderProgrammingSkills = () => {
+    return (
+      <div ref={programmingSkillsRef} className="programming-skills-container">
+        {programmingSkillDetails.map((categoryDetail, categoryIndex) => (
+          <div key={categoryIndex} className="skills-category">
+            <h3>{categoryDetail.category}</h3>
+            {categoryDetail.skills.map((skill, skillIndex) => (
+              <div className="skill-parent" key={skillIndex}>
+                <div className="heading-bullet"></div>
+                <span>{skill.skill}</span>
+                <div className="skill-percentage">
+                  <div
+                    style={{ width: skill.ratingPercentage + "%" }}
+                    className="active-percentage-bar"
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    );
+  };
 
   const projectDetails = [
     {
@@ -65,7 +126,8 @@ const Resume = (props) => {
       duration: { fromDate: "Jul 2024", toDate: "Aug 2024" },
       description:
         "Pantry Tracker is an inventory management application that helps users to keep track of their pantry items. Users can add, update, delete, and search for items in their pantry.  The app includes user authentication features, allowing multiple users to securely track and manage their pantry inventory.",
-      subHeading: "Technologies Used: Next.js, React.js, Tailwind CSS, Node.js, Firebase, Vercel",
+      subHeading:
+        "Technologies Used: Next.js, React.js, Tailwind CSS, Node.js, Firebase, Vercel"
     },
     {
       title: "Recallect | AI Flashcard SaaS Application",
@@ -73,8 +135,8 @@ const Resume = (props) => {
       description:
         "Developed a comprehensive Next.js flashcard application with a focus on user experience and advanced features. The project integrated Firebase for robust data storage, Clerk for secure and customizable user authentication, and OpenAI to generate AI-powered flashcards. Implemented Stripe for secure payment processing, enabling a Pro Plan for users.",
       subHeading:
-        "Technologies Used: Next.js, React.js, Stripe, Clerk, OpenAI, Firebase, Vercel",
-    },
+        "Technologies Used: Next.js, React.js, Stripe, Clerk, OpenAI, Firebase, Vercel"
+    }
   ];
 
   const resumeDetails = [
@@ -114,7 +176,7 @@ const Resume = (props) => {
       <ResumeHeading
         heading={"Headstarter AI"}
         subHeading={"Software Engineer Fellow | Remote"}
-        fromDate={"Jul 2024"} 
+        fromDate={"Jul 2024"}
         toDate={"Present"}
       />
       <div className="experience-description">
@@ -147,72 +209,58 @@ const Resume = (props) => {
           playbacks and sprint dashboards.
         </span>
       </div>
-      <br />
-      <div
-        className="resume-screen-container programming-skills-container"
-        key="programming-skills"
-      >
-        {programmingSkillDetails.map((skill, index) => (
-          <div className="skill-parent" key={index}>
-            <div className="heading-bullet"></div>
-            <span>{skill.skill}</span>
-            <div className="skill-percentage">
-              <div
-                style={{ width: skill.ratingPercentage + "%" }}
-                className="active-percentage-bar"
-              ></div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <br />
-      <br />
-      <br />
-      <div className="resume-screen-container" key="projects">
-        {projectDetails.map((projectDetails, index) => (
-          <ResumeHeading
-            key={index}
-            heading={projectDetails.title}
-            subHeading={projectDetails.subHeading}
-            description={projectDetails.description}
-            fromDate={projectDetails.duration.fromDate}
-            toDate={projectDetails.duration.toDate}
-          />
-        ))}
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div className="resume-screen-container" key="interests">
-        <ResumeHeading
-          heading="Swimming"
-          description="Apart from being a tech enthusiast and a coder, I also enjoy swimming simply because it keeps me healthy throughout the day."
-        />
-        <ResumeHeading
-          heading="Trekking"
-          description="To relax and to soothe my soul, I love to go for trekking with friends or alone sometimes, occasionally on weekends."
-        />
-        <ResumeHeading
-          heading="Competitive Gaming"
-          description="I like to challenge my reflexes a lot while competing in football, and action shooter games, pushing the rank and having interactive gaming sessions excites me the most."
-        />
-      </div>
-      <br />
-      <br />
-      <div className="resume-screen-container" key="extracurriculars">
-      <a href="https://data.typeracer.com/pit/profile?user=saikiran1&ref=badge" target="_top"><img src="https://data.typeracer.com/misc/badge?user=saikiran1" border="0" alt="TypeRacer.com scorecard for user saikiran1"/></a>
-      </div>
     </div>,
+    <div className="resume-screen-container" key="programming-skills">
+      {renderProgrammingSkills()}
+    </div>,
+    <div className="resume-screen-container" key="projects">
+      {projectDetails.map((projectDetails, index) => (
+        <ResumeHeading
+          key={index}
+          heading={projectDetails.title}
+          subHeading={projectDetails.subHeading}
+          description={projectDetails.description}
+          fromDate={projectDetails.duration.fromDate}
+          toDate={projectDetails.duration.toDate}
+        />
+      ))}
+    </div>,
+    <div className="resume-screen-container" key="interests">
+      <ResumeHeading
+        heading="Swimming"
+        description="Apart from being a tech enthusiast and a coder, I also enjoy swimming simply because it keeps me healthy throughout the day."
+      />
+      <ResumeHeading
+        heading="Trekking"
+        description="To relax and to soothe my soul, I love to go for trekking with friends or alone sometimes, occasionally on weekends."
+      />
+      <ResumeHeading
+        heading="Competitive Gaming"
+        description="I like to challenge my reflexes a lot while competing in football, and action shooter games, pushing the rank and having interactive gaming sessions excites me the most."
+      />
+    </div>,
+    <div className="resume-screen-container" key="extracurriculars">
+      <a
+        href="https://data.typeracer.com/pit/profile?user=saikiran1&ref=badge"
+        target="_top"
+      >
+        <img
+          src="https://data.typeracer.com/misc/badge?user=saikiran1"
+          border="0"
+          alt="TypeRacer.com scorecard for user saikiran1"
+        />
+      </a>
+    </div>
   ];
 
   const handleCarousal = (index) => {
-    let offsetHeight = 360;
-    let newCarousalOffset = {
-      style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
-    };
-    setCarousalOffsetStyle(newCarousalOffset);
+    console.log("Selected section index:", index);
     setSelectedBulletIndex(index);
+
+    // Scroll to programming skills container when Programming Skills is selected
+    if (index === 2 && programmingSkillsRef.current) {
+      programmingSkillsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   const getBullets = () => {
@@ -236,11 +284,19 @@ const Resume = (props) => {
 
   const getResumeScreen = () => {
     return (
-      <div
-        style={carousalOffsetStyle.style}
-        className="resume-details-carousal"
-      >
-        {resumeDetails.map((ResumeDetail) => ResumeDetail)}
+      <div className="resume-details-carousal">
+        {resumeDetails.map((ResumeDetail, index) => (
+          <div
+            key={index}
+            className={
+              index === selectedBulletIndex
+                ? "active-section"
+                : "inactive-section"
+            }
+          >
+            {ResumeDetail}
+          </div>
+        ))}
       </div>
     );
   };
@@ -253,7 +309,10 @@ const Resume = (props) => {
   }, [fadeInSubscription]);
 
   return (
-    <div className="resume-container screen-container fade-in" id={props.id || ""}>
+    <div
+      className="resume-container screen-container fade-in"
+      id={props.id || ""}
+    >
       <div className="resume-content">
         <ScreenHeading title={"Resume"} />
         <div className="resume-card">

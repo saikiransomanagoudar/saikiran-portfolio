@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
@@ -11,19 +10,28 @@ export default function AboutMe(props) {
   };
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-  const SCREEN_CONSTANTS = {
-    description:
-      "Hello! I'm Saikiran, currently pursuing my Master's in Computer Science student with a passion for using technology to make a meaningful impact on the world. I’m driven by the desire to tackle complex problems and create innovative solutions, particularly in the realms of Cloud Computing and Artificial Intelligence. My expertise spans across Full Stack Web Development, Amazon Web Services, RESTful APIs, and various testing tools like SoapUI and Postman. I’ve also worked extensively with IBM Integration Bus (IIB). My technical toolkit includes strong proficiency in programming languages such as Java, Python, C and JavaScript, along with its popular frameworks like React.js, Next.js, and React Native. Outside of my professional life, I’m an avid reader with a deep interest in technology, self-improvement, and biographies. I believe in continuous learning and growth.",
-    highlights: {
-      bullets: [
-        "Full Stack Web Development",
-        "Interactive Front-End as per the design",
-        "React and Next.js",
-        "Managing database",
-      ],
-      heading: "Here are a few highlights:",
-    },
-  };
+    const SCREEN_CONSTANTS = {
+      description: `
+        I'm a Software Engineer passionate about solving complex problems at the intersection of Cloud Computing and Artificial Intelligence. With over 4 years at Wipro, I've contributed to large-scale projects by automating processes, transforming applications, and optimizing performance in cloud-driven environments.
+    
+        My expertise includes full-stack development, leveraging AWS, and building scalable solutions with React.js, Next.js, and RESTful APIs. I thrive in fast-paced environments where innovation meets efficiency.
+    
+        Currently pursuing a Master’s in Computer Science at Illinois Tech, I’m focusing on cutting-edge technologies that push the boundaries of what’s possible. Along the way, I've honed my skills in Java, Python, JavaScript, and cloud infrastructure.
+    
+        Outside of coding, I’m an avid reader exploring technology, self-improvement, and biographies. Always eager to connect with like-minded professionals, let’s collaborate on creating real-world impact together!
+      `,
+      highlights: {
+        bullets: [
+          "Delivered 32 apps to AWS, cutting downtime by 25%.",
+          "Led Agile teams in complex cloud projects.",
+          "Built and deployed 5 AI solutions in 5 weeks.",
+          "Developed automated web scrapers and AI-powered tools.",
+          "Expert in Java, React, AWS, and APIs.",
+        ],
+        heading: "Here are a few highlights:",
+      },
+    }; 
+
   const renderHighlight = () => {
     return SCREEN_CONSTANTS.highlights.bullets.map((value, i) => (
       <div className="highlight" key={i}>
