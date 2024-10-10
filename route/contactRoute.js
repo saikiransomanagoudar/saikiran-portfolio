@@ -20,10 +20,10 @@ router.post('/contact', (req, res)=>{
         subject: `Message from ${data.name}`,
         html:`
         
-        <h3>Informations<h3/>
+        <h3>Sender Information<h3/>
         <ul>
-            <li>Name: ${data.name}<li/>
-            <li>Mail: ${data.email}<li/>
+            <li>Name: ${data.name}</li>
+            <li>Mail: ${data.email}</li>
         </ul>
         <br />
         <h3>Message</h3>
