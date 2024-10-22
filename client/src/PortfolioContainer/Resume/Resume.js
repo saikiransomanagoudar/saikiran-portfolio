@@ -81,6 +81,17 @@ const Resume = (props) => {
         </div>
         <div className="resume-heading-description">
           <span>{props.description ? props.description : ""}</span>
+          {"  "}
+          {props.githubLink && (
+            <a
+              href={props.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-github-link"
+            >
+              View on GitHub
+            </a>
+          )}
         </div>
       </div>
     );
@@ -94,6 +105,52 @@ const Resume = (props) => {
     { label: "Interests", logoSrc: "interests.svg" },
     { label: "Extracurriculars", logoSrc: "typing.svg" }
   ];
+
+  const renderWorkExperience = () => {
+    return (
+      <div className="work-experience-container">
+        <ResumeHeading
+          heading={"Headstarter AI"}
+          subHeading={"Software Engineer Fellow | Remote"}
+          fromDate={"Jul 2024"}
+          toDate={"Aug 2024"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            - Built and deployed five AI projects in five weeks leveraging
+            React.js, Next.js, Firebase, Clerk, and Vercel, following agile
+            methodologies with weekly sprints and incorporated CI/CD practices
+            for iterative deployment.
+          </span>
+        </div>
+        <ResumeHeading
+          heading={"Wipro Limited"}
+          subHeading={"Senior Software Engineer | Bengaluru, Karnataka"}
+          fromDate={"Sep 2019"}
+          toDate={"Oct 2022"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            - Delivered 32 on-premise applications of different Squads to AWS
+            hybrid cloud with end-to-end responsibility.
+          </span>
+        </div>
+        <ResumeHeading
+          heading={"Wipro Limited"}
+          subHeading={"Software Engineer | Bengaluru, Karnataka"}
+          fromDate={"Oct 2022"}
+          toDate={"May 2023"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            - Assisted in Agile, Squads/Studio using JIRA that includes sprint
+            planning with story point estimation, standups, retrospective,
+            playbacks and sprint dashboards.
+          </span>
+        </div>
+      </div>
+    );
+  };
 
   // Function to render programming skills
   const renderProgrammingSkills = () => {
@@ -131,37 +188,58 @@ const Resume = (props) => {
             description={projectDetails.description}
             fromDate={projectDetails.duration.fromDate}
             toDate={projectDetails.duration.toDate}
+            githubLink={projectDetails.githubLink}
           />
         ))}
       </div>
     );
   };
-  
 
   const projectDetails = [
     {
-      title: "Pantry Tracker | Inventory Management Application",
+      title: "Pantry Tracker",
       duration: { fromDate: "Jul 2024", toDate: "Aug 2024" },
       description:
-        "Pantry Tracker is an inventory management application that helps users to keep track of their pantry items. Users can add, update, delete, and search for items in their pantry.  The app includes user authentication features, allowing multiple users to securely track and manage their pantry inventory.",
+        "Pantry Tracker is an inventory management application that helps users to keep track of their pantry items. Users can add, update, delete, and search for items in their pantry. The app includes user authentication features, allowing multiple users to securely track and manage their pantry inventory.",
       subHeading:
-        "Technologies Used: Next.js, React.js, Tailwind CSS, Node.js, Firebase, Vercel"
+        "Technologies Used: Next.js, React.js, Tailwind CSS, Node.js, Firebase, Vercel",
+      githubLink: "https://github.com/saikiransomanagoudar/pantry-tracker"
     },
     {
-      title: "Recallect | AI Flashcard SaaS Application",
+      title: "Recallect | AI-Powered Flashcard App",
       duration: { fromDate: "Aug 2024", toDate: "Aug 2024" },
       description:
         "Developed a comprehensive Next.js flashcard application with a focus on user experience and advanced features. The project integrated Firebase for robust data storage, Clerk for secure and customizable user authentication, and OpenAI to generate AI-powered flashcards. Implemented Stripe for secure payment processing, enabling a Pro Plan for users.",
       subHeading:
-        "Technologies Used: Next.js, React.js, Stripe, OpenAI, Firebase, Clerk, Vercel"
+        "Technologies Used: Next.js, React.js, Stripe, OpenAI, Firebase, Clerk, Vercel",
+      githubLink: "https://github.com/saikiransomanagoudar/recallect"
     },
     {
-      title: "AI Rate My Professor Chatbot | ProfBot",
+      title: "ProfBot",
       duration: { fromDate: "Aug 2024", toDate: "Aug 2024" },
       description:
         "ProfBot is a chatbot that helps students in choosing the right professor for their academic needs based on rating, subject, and skills.",
       subHeading:
-        "Technologies Used: Next.js, React.js, Python, Node.js, Python, PineconeDB, Vercel"
+        "Technologies Used: Next.js, React.js, Python, Node.js, Python, PineconeDB, Vercel",
+      githubLink: "https://github.com/saikiransomanagoudar/profbot"
+    },
+    {
+      title: "Smart Homes | E-commerce Application",
+      duration: { fromDate: "Aug 2024", toDate: "Sep 2024" },
+      description:
+        "Smart Homes is a full-stack web application that simulates an e-commerce platform for purchasing smart home products. It enables users to explore a wide range of smart home devices, add them to their cart, and complete orders seamlessly. The project follows the MVC (Model-View-Controller) architecture, with MongoDB and MySQL databases handling data storage and management, providing a robust and scalable solution for managing both product and user data.",
+      subHeading:
+        "Technologies Used: React.js, React Router, Java Servlets, Jakarta EE, MySQL, MongoDB",
+      githubLink: "https://github.com/saikiransomanagoudar/smart-homes"
+    },
+    {
+      title: "Medical Advice Chatbot",
+      duration: { fromDate: "Oct 2024", toDate: "Oct 2024" },
+      description:
+        "This project is a chatbot powered by Rasa and OpenAI GPT-3.5, utilizing Autogen for dynamic interaction generation. The bot provides medical advice related to symptoms, conditions, and treatment options. It leverages multiple specialized agents (such as GreetingAgent, MedicineAgent, MedicalHospitalAgent, and MedicalDepartmentAgent) to handle different user queries in healthcare contexts.",
+      subHeading:
+        "Technologies Used: Python, Rasa, OpenAI GPT-3.5, Autogen, dotenv, Rasa SDK, Rasa Shell",
+      githubLink: "https://github.com/saikiransomanagoudar/medical-advice"
     }
   ];
 
@@ -199,42 +277,7 @@ const Resume = (props) => {
       />
     </div>,
     <div className="resume-screen-container" key="work-experience">
-      <ResumeHeading
-        heading={"Headstarter AI"}
-        subHeading={"Software Engineer Fellow | Remote"}
-        fromDate={"Jul 2024"}
-        toDate={"Present"}
-      />
-      <div className="experience-description">
-        <span className="resume-description-text">
-          Currently working as a Software Engineer Fellow.
-        </span>
-      </div>
-      <ResumeHeading
-        heading={"Wipro Limited"}
-        subHeading={"Senior Software Engineer | Bengaluru, Karnataka"}
-        fromDate={"Sep 2019"}
-        toDate={"Oct 2022"}
-      />
-      <div className="experience-description">
-        <span className="resume-description-text">
-          - Delivered 32 on-premise applications of different Squads to AWS
-          hybrid cloud with end-to-end responsibility.
-        </span>
-      </div>
-      <ResumeHeading
-        heading={"Wipro Limited"}
-        subHeading={"Software Engineer | Bengaluru, Karnataka"}
-        fromDate={"Oct 2022"}
-        toDate={"May 2023"}
-      />
-      <div className="experience-description">
-        <span className="resume-description-text">
-          - Assisted in Agile, Squads/Studio using JIRA that includes sprint
-          planning with story point estimation, standups, retrospective,
-          playbacks and sprint dashboards.
-        </span>
-      </div>
+      {renderWorkExperience()}
     </div>,
     <div className="resume-screen-container" key="programming-skills">
       {renderProgrammingSkills()}
@@ -276,7 +319,10 @@ const Resume = (props) => {
 
     // Scroll to programming skills container when Programming Skills is selected
     if (index === 2 && programmingSkillsRef.current) {
-      programmingSkillsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      programmingSkillsRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
     }
   };
 

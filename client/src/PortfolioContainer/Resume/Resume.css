@@ -178,7 +178,24 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  width: 100%; /* Ensure the skill bar takes full width */
+  width: 100%;
+}
+
+.work-experience-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.work-experience-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.work-experience-container::-webkit-scrollbar-thumb {
+  background-color: #ff5823;
+  border-radius: 4px;
 }
 
 .programming-skills-container {
@@ -187,8 +204,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  overflow-y: auto; /* Ensures all skills are visible by scrolling if needed */
-  max-height: 400px; /* Set a maximum height if needed */
+  overflow-y: auto; 
+  max-height: 400px; 
 }
 
 .programming-skills-container::-webkit-scrollbar {
@@ -196,28 +213,26 @@
 }
 
 .programming-skills-container::-webkit-scrollbar-thumb {
-  background-color: #ff5823; /* Customize the scrollbar thumb */
+  background-color: #ff5823; 
   border-radius: 4px;
 }
 
-/* Projects Section - Scrollable container */
 .projects-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  overflow-y: auto; /* Allows vertical scrolling */
-  max-height: 400px; /* Set a maximum height for the container */
+  overflow-y: auto; 
+  max-height: 400px;
 }
 
-/* Customize the scrollbar for desktop */
 .projects-container::-webkit-scrollbar {
   width: 8px;
 }
 
 .projects-container::-webkit-scrollbar-thumb {
-  background-color: #ff5823; /* Customize the scrollbar thumb */
+  background-color: #ff5823;
   border-radius: 4px;
 }
 
@@ -245,7 +260,7 @@
 
 .skills-category {
   margin-bottom: 20px;
-  width: 100%; /* Ensure the category takes full width */
+  width: 100%;
 }
 
 .skills-category h3 {
@@ -255,35 +270,32 @@
   margin-bottom: 10px;
 }
 
-/* General Mobile Adjustments */
 @media only screen and (max-width: 768px) {
   .resume-card {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Full width for resume card */
+    width: 100%;
     padding: 0 15px;
   }
 
-  /* Ensure container has full width for each section */
   .resume-bullet-details {
-    width: 100%; /* Full width for the right content */
+    width: 100%;
     padding: 0;
-    flex-grow: 1; /* Ensure this section expands properly */
-    min-width: 100%; /* Force the right side to take full width */
+    flex-grow: 1;
+    min-width: 100%;
   }
 
-  /* Programming Skills Section */
   .programming-skills-container {
-    width: 100%; /* Full width */
-    max-height: 400px; /* Limit height to make it scrollable */
-    overflow-y: scroll; /* Enable vertical scrolling */
+    width: 100%; 
+    max-height: 400px; 
+    overflow-y: scroll;
     padding-bottom: 20px;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
   }
 
   .skills-category {
-    width: 100%; /* Full width for each skill category */
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -291,32 +303,29 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    width: 100%; /* Full width for each skill */
+    width: 100%;
   }
 
   .skill-percentage {
     height: 12px;
-    width: 60%; /* Skill bar width */
+    width: 60%;
   }
 
-  /* Extracurriculars Section */
   .resume-screen-container {
-    width: 100%; /* Full width for extracurriculars and all other sections */
-    padding: 0 15px; /* Padding for consistency */
-    min-width: 100%; /* Ensure minimum width to match the layout */
+    width: 100%; 
+    padding: 0 15px; 
+    min-width: 100%; 
   }
 
-  /* Ensure the badge in extracurriculars fits */
   .resume-screen-container a img {
     max-width: 100%;
     height: auto;
   }
 
-  /* Bullet Navigation Fix */
   .bullet-container {
     flex-direction: row;
     justify-content: space-between;
-    width: 100%; /* Full width for bullet navigation */
+    width: 100%;
   }
 
   .projects-container {
@@ -325,8 +334,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    overflow-y: auto; /* Allows vertical scrolling */
-    max-height: 400px; /* Set a maximum height for the container */
+    overflow-y: auto;
+    max-height: 400px;
   }
 
   .projects-container::-webkit-scrollbar {
@@ -334,8 +343,20 @@
   }
   
   .projects-container::-webkit-scrollbar-thumb {
-    background-color: #ff5823; /* Customize the scrollbar thumb */
+    background-color: #ff5823;
     border-radius: 4px;
+  }
+
+  .project-github-link {
+    display: block;
+    margin-top: 8px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-github-link:hover {
+    text-decoration: underline;
   }
 
   .bullets {
@@ -373,15 +394,15 @@
     flex-direction: column;
     margin: 30px 0;
     align-items: center;
-    width: 100%; /* Full width */
+    width: 100%;
   }
 
   .resume-bullet-details {
-    height: auto; /* Auto height for expanding sections */
+    height: auto;
     padding: 0;
-    width: 100%; /* Full width for the right side */
-    flex-grow: 1; /* Ensure full use of width */
-    min-width: 100%; /* Prevent shrinking */
+    width: 100%;
+    flex-grow: 1;
+    min-width: 100%;
   }
 
   .resume-bullets {
@@ -397,7 +418,7 @@
 /* Desktop Adjustments */
 @media only screen and (min-width: 1200px) {
   .resume-card {
-    width: 1000px; /* Set a fixed width for larger screens */
+    width: 1000px;
     padding: 0 20px;
   }
 
