@@ -20,10 +20,10 @@ router.post('/contact', (req, res)=>{
         subject: `Message from ${data.name}`,
         html:`
         
-        <h3>Sender Information<h3/>
+        <h3>Informations<h3/>
         <ul>
-            <li>Name: ${data.name}</li>
-            <li>Mail: ${data.email}</li>
+            <li>Name: ${data.name}<li/>
+            <li>Mail: ${data.email}<li/>
         </ul>
         <br />
         <h3>Message</h3>
@@ -32,7 +32,7 @@ router.post('/contact', (req, res)=>{
     }
     smtpTransporter.sendMail(mailOptions, (error)=>{
         try {
-            if (error) return res.status(400).json({msg: 'Please fill all the fileds!'})
+            if (error) return res.status(400).json({msg: 'Please fill all the fields!'})
             res.status(200).json({msg: 'Thank you for contacting Saikiran!'})
         } catch (error) {
             if (error) return res.status(500).json({msg: "There is server error"})

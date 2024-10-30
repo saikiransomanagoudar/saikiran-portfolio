@@ -33,33 +33,37 @@ export default function ContactMe(props) {
   const handleMessage = (e) => {
     setMessage(e.target.value);
   };
-  console.log(name);
   const submitForm = async (e) => {
     e.preventDefault();
     if (name === "" || email === "" || message === "") {
       const errorMsg = "Please fill all the fields.";
       setBanner(errorMsg);
       toast.error(errorMsg);
-      return; // Stop the function here if validation fails
+      return;
     }
 
-    setIsLoading(true); // Start loading before the request
+    setIsLoading(true);
     try {
       let data = {
         name,
         email,
         message,
       };
-      const baseUrl = process.env.REACT_APP_API_URL || "http://saikiran-portfolio-b078b74c7ad5.herokuapp.com:5000";
-      const res = await axios.post(`${baseUrl}/contact`, data);
+      console.log("Data to be sent:", data);
+      const baseUrl = process.env.REACT_APP_API_URL || "http://saikiran-portfolio-b078b74c7ad5.herokuapp.com";
+      const res = await axios.post(`${baseUrl}/contact`, data, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      
       if (res.status === 200 && res.data.msg) {
         setBanner(res.data.msg);
         toast.success(res.data.msg);
-        setName(""); // Clear fields only on successful submission
+        setName("");
         setEmail("");
         setMessage("");
       } else {
-        // Handle other status codes or server responses
         toast.error("Unexpected response from server.");
       }
     } catch (error) {
@@ -67,7 +71,7 @@ export default function ContactMe(props) {
       toast.error("Failed to send message due to an error.");
       setBanner("Failed to send message due to an error.");
     }
-    setIsLoading(false); // Stop loading after handling the response
+    setIsLoading(false);
   };
 
   return (
@@ -123,7 +127,7 @@ export default function ContactMe(props) {
             <textarea type="text" onChange={handleMessage} value={message} />
             <div className="send-btn">
               <button type="submit">
-                send <i className="fa fa-paper-plane" />{" "}
+                Send <i className="fa fa-paper-plane" />{" "}
                 {isLoading ? (
                   <b className="load">
                     <img src={load1} alt="image not responding" />
