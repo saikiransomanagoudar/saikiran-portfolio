@@ -97,13 +97,6 @@ export default function ContactMe(props) {
           >
             <i className="fa fa-linkedin"></i>
           </a>
-          {/* <a
-            href="https://www.instagram.com/saikiransomanagoudar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-instagram"></i>
-          </a> */}
           <a
             href="https://www.youtube.com/channel/UCvqP86Zm7Bda94gHnUtlK2g"
             target="_blank"
@@ -119,12 +112,12 @@ export default function ContactMe(props) {
           </div>
           <form onSubmit={submitForm}>
             <p>{banner}</p>
-            <label htmlFor="name">Name</label>
-            <input type="text" onChange={handleName} value={name} />
-            <label htmlFor="email">Email</label>
-            <input type="text" onChange={handleEmail} value={email} />
-            <label htmlFor="message">Message</label>
-            <textarea type="text" onChange={handleMessage} value={message} />
+            <label htmlFor="name"><strong>Name</strong></label>
+            <input type="text" onChange={handleName} value={name} placeholder="your good name"/>
+            <label htmlFor="email"><strong>Email</strong></label>
+            <input type="text" onChange={handleEmail} value={email} placeholder="your email address"/>
+            <label htmlFor="message"><strong>Message</strong></label>
+            <textarea type="text" onChange={handleMessage} value={message} placeholder="a quick message for me"/>
             <div className="send-btn">
               <button type="submit">
                 Send <i className="fa fa-paper-plane" />{" "}
