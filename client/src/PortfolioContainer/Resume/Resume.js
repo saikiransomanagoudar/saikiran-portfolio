@@ -3,6 +3,7 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
+import { subscribeOn } from "rxjs";
 
 const Resume = (props) => {
   const programmingSkillsRef = useRef(null);
@@ -197,13 +198,30 @@ const Resume = (props) => {
 
   const projectDetails = [
     {
-      title: "Pantry Tracker",
-      duration: { fromDate: "Jul 2024", toDate: "Aug 2024" },
+      title: "Smart Retail Bookstore",
+      duration: { fromDate: "Aug 2024", toDate: "Sep 2024" },
       description:
-        "Pantry Tracker is an inventory management application that helps users to keep track of their pantry items. Users can add, update, delete, and search for items in their pantry. The app includes user authentication features, allowing multiple users to securely track and manage their pantry inventory.",
+        "Smart Retail Bookstore is a full-stack web application that uses AI powered recommendation to suggest books to users based on their preferences. The project leverages a collaborative filtering algorithm to provide personalized recommendations to users. It also includes features like user authentication, built in chatbot with multiple agents (Orders Agent, Recommendation Agent, Fraud/Damage Agent), and cart management.",
+        subHeading: "Technologies Used:- Frameworks - Flutter, Flask, LangGraph, LangChain, FastAPI | Languages - Dart, Python | APIs: Hardcover GraphQL, OpenAI gpt-4o-mini | Database - PostgreSQL",
+      githubLink: "https://github.com/saikiransomanagoudar/smart-retail-bookstore-dart-flutter"
+    },
+    {
+      title: "Medical Advice Chatbot",
+      duration: { fromDate: "Oct 2024", toDate: "Oct 2024" },
+      description:
+        "This project is a chatbot powered by Rasa and OpenAI gpt-3.5, utilizing Autogen for dynamic interaction generation. The bot provides medical advice related to symptoms, conditions, and treatment options. It leverages multiple specialized agents (such as GreetingAgent, MedicineAgent, MedicalHospitalAgent, and MedicalDepartmentAgent) to handle different user queries in healthcare contexts.",
       subHeading:
-        "Technologies Used: Next.js, React.js, Tailwind CSS, Node.js, Firebase, Vercel",
-      githubLink: "https://github.com/saikiransomanagoudar/pantry-tracker"
+        "Technologies Used:- Python, Rasa, OpenAI gpt-3.5, Autogen, dotenv, Rasa SDK, Rasa Shell",
+      githubLink: "https://github.com/saikiransomanagoudar/medical-advice"
+    },
+    {
+      title: "Smart Homes | E-commerce Application",
+      duration: { fromDate: "Aug 2024", toDate: "Sep 2024" },
+      description:
+        "Smart Homes is a full-stack web application that simulates an e-commerce platform for purchasing smart home products. It enables users to explore a wide range of smart home devices, add them to their cart, and complete orders seamlessly. The project follows the MVC (Model-View-Controller) architecture, with MongoDB and MySQL databases handling data storage and management, providing a robust and scalable solution for managing both product and user data.",
+      subHeading:
+        "Technologies Used:- React.js, React Router, Java Servlets, Jakarta EE, MySQL, MongoDB",
+      githubLink: "https://github.com/saikiransomanagoudar/smart-homes"
     },
     {
       title: "Recallect | AI-Powered Flashcard App",
@@ -211,7 +229,7 @@ const Resume = (props) => {
       description:
         "Developed a comprehensive Next.js flashcard application with a focus on user experience and advanced features. The project integrated Firebase for robust data storage, Clerk for secure and customizable user authentication, and OpenAI to generate AI-powered flashcards. Implemented Stripe for secure payment processing, enabling a Pro Plan for users.",
       subHeading:
-        "Technologies Used: Next.js, React.js, Stripe, OpenAI, Firebase, Clerk, Vercel",
+        "Technologies Used:- Next.js, React.js, Stripe, OpenAI, Firebase, Clerk, Vercel",
       githubLink: "https://github.com/saikiransomanagoudar/recallect"
     },
     {
@@ -220,27 +238,18 @@ const Resume = (props) => {
       description:
         "ProfBot is a chatbot that helps students in choosing the right professor for their academic needs based on rating, subject, and skills.",
       subHeading:
-        "Technologies Used: Next.js, React.js, Python, Node.js, Python, PineconeDB, Vercel",
+        "Technologies Used:- Next.js, React.js, Python, Node.js, Python, PineconeDB, Vercel",
       githubLink: "https://github.com/saikiransomanagoudar/profbot"
     },
     {
-      title: "Smart Homes | E-commerce Application",
-      duration: { fromDate: "Aug 2024", toDate: "Sep 2024" },
+      title: "Pantry Tracker",
+      duration: { fromDate: "Jul 2024", toDate: "Aug 2024" },
       description:
-        "Smart Homes is a full-stack web application that simulates an e-commerce platform for purchasing smart home products. It enables users to explore a wide range of smart home devices, add them to their cart, and complete orders seamlessly. The project follows the MVC (Model-View-Controller) architecture, with MongoDB and MySQL databases handling data storage and management, providing a robust and scalable solution for managing both product and user data.",
+        "Pantry Tracker is an inventory management application that helps users to keep track of their pantry items. Users can add, update, delete, and search for items in their pantry. The app includes user authentication features, allowing multiple users to securely track and manage their pantry inventory.",
       subHeading:
-        "Technologies Used: React.js, React Router, Java Servlets, Jakarta EE, MySQL, MongoDB",
-      githubLink: "https://github.com/saikiransomanagoudar/smart-homes"
+        "Technologies Used:- Next.js, React.js, Tailwind CSS, Node.js, Firebase, Vercel",
+      githubLink: "https://github.com/saikiransomanagoudar/pantry-tracker"
     },
-    {
-      title: "Medical Advice Chatbot",
-      duration: { fromDate: "Oct 2024", toDate: "Oct 2024" },
-      description:
-        "This project is a chatbot powered by Rasa and OpenAI GPT-3.5, utilizing Autogen for dynamic interaction generation. The bot provides medical advice related to symptoms, conditions, and treatment options. It leverages multiple specialized agents (such as GreetingAgent, MedicineAgent, MedicalHospitalAgent, and MedicalDepartmentAgent) to handle different user queries in healthcare contexts.",
-      subHeading:
-        "Technologies Used: Python, Rasa, OpenAI GPT-3.5, Autogen, dotenv, Rasa SDK, Rasa Shell",
-      githubLink: "https://github.com/saikiransomanagoudar/medical-advice"
-    }
   ];
 
   const resumeDetails = [

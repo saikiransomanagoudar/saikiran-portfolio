@@ -24,13 +24,6 @@ export default function Profile() {
               >
                 <i className="fa fa-linkedin"></i>
               </a>
-              {/* <a
-                href="https://www.instagram.com/saikiransomanagoudar/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-instagram"></i>
-              </a> */}
               <a
                 href="https://www.youtube.com/channel/UCvqP86Zm7Bda94gHnUtlK2g"
                 target="_blank"
@@ -54,12 +47,10 @@ export default function Profile() {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Software Engineer 💻", 1500,
-                    "AWS Certified Cloud Practitioner ☁️", 1500,
-                    "Full-Stack Developer 🌐", 1500,
-                    "AI Enthusiast 🤖", 1500,
-                    "React & Next.js Developer 🚀", 1500,
-                    "Automation Specialist 🔧", 1500,
+                    "Software Engineer", 1500,
+                    "AWS Certified Cloud Practitioner", 1500,
+                    "Full-Stack Developer", 1500,
+                    "AI Enthusiast", 1500,
                   ]}
                 />
               </h1>
