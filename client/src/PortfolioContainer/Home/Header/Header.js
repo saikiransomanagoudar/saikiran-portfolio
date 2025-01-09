@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Header.css';
 
 export default function Header() {
-    // Initialize selected screen based on URL hash or default to Home (index 0)
     const [selectedScreen, setSelectedScreen] = useState(GET_SCREEN_INDEX(window.location.hash.substring(1)) || 0);
     const [showHeaderOptions, setShowHeaderOptions] = useState(false);
 
@@ -18,7 +17,6 @@ export default function Header() {
             setSelectedScreen(screenIndex);
         };
 
-        // Subscribe to screen change events from ScrollService
         const currentScreenSubscription = ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen);
         return () => {
             currentScreenSubscription.unsubscribe();
@@ -48,7 +46,7 @@ export default function Header() {
         let screenComponent = document.getElementById(screen.screen_name);
         if (!screenComponent) return;
         screenComponent.scrollIntoView({ behavior: 'smooth' });
-        setSelectedScreen(index); // Update selected screen state
+        setSelectedScreen(index);
         setShowHeaderOptions(false);
     };
 

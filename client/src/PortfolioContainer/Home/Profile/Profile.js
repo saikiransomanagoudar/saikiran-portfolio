@@ -67,7 +67,7 @@ export default function Profile() {
               Contact Me
             </button>
             <a
-              href="https://drive.google.com/file/d/1kTu9gWG8IEXxm7lQi-ZOt7N3c6YqtsjR/view?usp=sharing"
+              href="https://drive.google.com/file/d/1fntohypU5JXZj6gxVvR_QpcyyFt1_u-H/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               download={"Saikiran_Somanagoudar_Resume.pdf"}
