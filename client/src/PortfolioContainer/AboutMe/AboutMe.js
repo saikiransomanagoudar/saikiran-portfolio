@@ -12,7 +12,7 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
     const SCREEN_CONSTANTS = {
       description: `
-        Experienced Software Engineer with 4+ years at Wipro specializing in Cloud Computing and AI. Track record of delivering impactful solutions through AWS applications and AI implementations. Strong expertise in full-stack development using React.js, Next.js, Java, and RESTful APIs. Currently pursuing MS in Computer Science at Illinois Tech.
+        Experienced Software Engineer with 4+ years at Wipro specializing in Cloud Computing and AI. Track record of delivering impactful solutions through AWS applications and AI implementations. Strong expertise in full-stack development using React.js, Next.js, Java, and RESTful APIs. Currently pursuing Master's in Computer Science at Illinois Tech.
       `,
       highlights: {
         bullets: [
