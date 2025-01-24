@@ -3,7 +3,6 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
-import { subscribeOn } from "rxjs";
 
 const Resume = (props) => {
   const programmingSkillsRef = useRef(null);
@@ -93,6 +92,16 @@ const Resume = (props) => {
               View on GitHub
             </a>
           )}
+          {props.websiteLink && (
+            <a
+              href={props.websiteLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-github-link"
+            >
+              Visit Website
+            </a>
+          )}
         </div>
       </div>
     );
@@ -118,10 +127,9 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Built and deployed five AI projects in five weeks leveraging
-            React.js, Next.js, Firebase, Clerk, and Vercel, following agile
-            methodologies with weekly sprints and incorporated CI/CD practices
-            for iterative deployment.
+            - Built and deployed five AI projects within five weeks following agile methodologies with CI/CD practices.<br />
+            - Led a team of three to develop an interactive customer support agent using Next.js, implementing a custom RAG pipeline with OpenAI and Pinecone that responds based on a company's knowledge base.<br />
+            - Engineered an automated web scraper to extract and upsert professor data from Rate My Professor into a Pinecone vector index, integrating it with a RAG pipeline using LangChain and OpenAI GPT-4 for real-time query insights.
           </span>
         </div>
         <ResumeHeading
@@ -132,8 +140,10 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Delivered 32 on-premise applications of different Squads to AWS
-            hybrid cloud with end-to-end responsibility.
+            - Successfully migrated 32 on-premises applications from various Squads to AWS hybrid cloud from Fujitsu, achieving a 25% reduction in system downtime using SDLC.<br />
+            - Developed standards for disaster recovery systems and performed gap analysis with a 12-member team to implement recovery plans, maintaining 90% application functionality.<br />
+            - Specialized in Infrastructure, Database, Application, and Security areas for applications deployed on Fujitsu cloud for Australia's Road and Maritime Services government customer.<br />
+            - Created comprehensive technical documentation for disaster recovery plans and middleware APIs to enhance cross-team collaboration and onboarding efficiency.<br />
           </span>
         </div>
         <ResumeHeading
@@ -144,9 +154,9 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Assisted in Agile, Squads/Studio using JIRA that includes sprint
-            planning with story point estimation, standups, retrospective,
-            playbacks and sprint dashboards.
+            - Led Agile Squads/Studio implementations using JIRA, managing sprint planning with story point estimation, standups, retrospectives, playbacks, and sprint dashboards.<br />
+            - Developed front-end application UI components including landing pages and sign-up/sign-in interfaces.<br />
+            - Monitored project build progress through project schedules and weekly reporting, incorporating Studio dashboards, status updates, risk assessments, and resolution tracking in Squads.<br />
           </span>
         </div>
       </div>
@@ -190,6 +200,7 @@ const Resume = (props) => {
             fromDate={projectDetails.duration.fromDate}
             toDate={projectDetails.duration.toDate}
             githubLink={projectDetails.githubLink}
+            websiteLink={projectDetails.websiteLink}
           />
         ))}
       </div>
@@ -197,6 +208,13 @@ const Resume = (props) => {
   };
 
   const projectDetails = [
+    {
+      title: "Text2Block",
+      duration: { fromDate: "Dec 2024", toDate: "Jan 2025" },
+      description:
+        "Text2Block is a web app to convert text prompts into visual flowcharts, achieving 100+ active users daily since deployment on render.com, simplifying complex ideas into visuals for enhanced understanding.",
+      websiteLink: "https://text2block-kie0.onrender.com/",
+    },
     {
       title: "Smart Retail Bookstore",
       duration: { fromDate: "Aug 2024", toDate: "Sep 2024" },
