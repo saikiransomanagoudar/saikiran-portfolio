@@ -12,21 +12,14 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
     const SCREEN_CONSTANTS = {
       description: `
-        I'm a Software Engineer passionate about solving complex problems at the intersection of Cloud Computing and Artificial Intelligence. With over 4 years at Wipro, I've contributed to large-scale projects by automating processes, transforming applications, and optimizing performance in cloud-driven environments.
-    
-        My expertise includes full-stack development, leveraging AWS, and building scalable solutions with React.js, Next.js, and RESTful APIs. I thrive in fast-paced environments where innovation meets efficiency.
-    
-        Currently pursuing a Master’s in Computer Science at Illinois Tech, I’m focusing on cutting-edge technologies that push the boundaries of what’s possible. Along the way, I've honed my skills in Java, Python, JavaScript, and cloud infrastructure.
-    
-        Outside of coding, I’m an avid reader exploring technology, self-improvement, and biographies. Always eager to connect with like-minded professionals, let’s collaborate on creating real-world impact together!
+        Experienced Software Engineer with 4+ years at Wipro specializing in Cloud Computing and AI. Track record of delivering impactful solutions through AWS applications and AI implementations. Strong expertise in full-stack development using React.js, Next.js, Java, and RESTful APIs. Currently pursuing MS in Computer Science at Illinois Tech.
       `,
       highlights: {
         bullets: [
-          "Delivered 32 apps to AWS, cutting downtime by 25%.",
-          "Led Agile teams in complex cloud projects.",
-          "Built and deployed 5 AI solutions in 5 weeks.",
-          "Developed automated web scrapers and AI-powered tools.",
-          "Expert in Java, React, AWS, and APIs.",
+          "Optimized application performance through AWS migrations",
+          "Led multiple Agile cloud transformation projects",
+          "Developed automated AI tools and web scrapers",
+          "Expert in Java, React, AWS, and API integration",
         ],
         heading: "Here are a few highlights:",
       },
