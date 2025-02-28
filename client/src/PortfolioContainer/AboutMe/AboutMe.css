@@ -22,15 +22,15 @@
 }
 
 .about-me-profile {
-    width: 50%;
-    background-image: url("../../assets/AboutMe/img1.jpg");
+    /* width: 50%; */
+    /* background-image: url("../../assets/AboutMe/img1.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .about-me-details {
-    width: 48%;
+    width: 100%;
     text-align: justify;
     padding: 30px;
 }

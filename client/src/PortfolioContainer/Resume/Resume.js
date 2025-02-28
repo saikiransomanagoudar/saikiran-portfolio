@@ -10,43 +10,322 @@ const Resume = (props) => {
 
   const programmingSkillDetails = [
     {
-      category: "Languages",
+      category: "LANGUAGES",
       skills: [
-        { skill: "Java", ratingPercentage: 95 },
-        { skill: "Python", ratingPercentage: 85 },
-        { skill: "JavaScript", ratingPercentage: 80 },
-        { skill: "C Programming", ratingPercentage: 80 }
-      ]
+        {
+          skill: "JavaScript",
+          ratingPercentage: 100,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        },
+        {
+          skill: "TypeScript",
+          ratingPercentage: 80,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+        },
+        {
+          skill: "Python",
+          ratingPercentage: 85,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+        },
+        {
+          skill: "Java",
+          ratingPercentage: 90,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+        },
+        {
+          skill: "C",
+          ratingPercentage: 70,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+        },
+        {
+          skill: "Dart",
+          ratingPercentage: 40,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg",
+        },
+        {
+          skill: "SQL",
+          ratingPercentage: 100,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
+        },
+      ],
     },
     {
-      category: "Frameworks",
+      category: "FRONTEND",
       skills: [
-        { skill: "React.js", ratingPercentage: 85 },
-        { skill: "Next.js", ratingPercentage: 80 },
-        { skill: "Tailwind CSS", ratingPercentage: 85 },
-        { skill: "Node.js", ratingPercentage: 70 }
-      ]
+        {
+          skill: "React",
+          ratingPercentage: 100,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+        },
+        {
+          skill: "Redux",
+          ratingPercentage: 85,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+        },
+        {
+          skill: "Next.js",
+          ratingPercentage: 95,
+          icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+        },
+        {
+          skill: "Flutter",
+          ratingPercentage: 40,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg",
+        },
+        {
+          skill: "HTML5",
+          ratingPercentage: 100,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+        },
+        {
+          skill: "CSS3",
+          ratingPercentage: 100,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+        },
+      ],
     },
     {
-      category: "Databases",
+      category: "STYLING",
       skills: [
-        { skill: "MySQL", ratingPercentage: 75 },
-        { skill: "MongoDB", ratingPercentage: 60 },
-        { skill: "Firebase", ratingPercentage: 60 },
-        { skill: "PostgreSQL", ratingPercentage: 50 },
-        { skill: "Pinecone", ratingPercentage: 20 }
-      ]
+        {
+          skill: "Tailwind",
+          ratingPercentage: 100,
+          icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+        },
+        {
+          skill: "Material UI",
+          ratingPercentage: 85,
+          icon: "https://mui.com/static/logo.png",
+        }
+      ],
     },
     {
-      category: "Libraries",
+      category: "BACKEND",
       skills: [
-        { skill: "OpenAI API", ratingPercentage: 80 },
-        { skill: "LangChain", ratingPercentage: 75 },
-        { skill: "Stripe API", ratingPercentage: 70 },
-        { skill: "Clerk API", ratingPercentage: 70 }
-      ]
-    }
-  ];
+        {
+          skill: "Node.js",
+          ratingPercentage: 100,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+        },
+        {
+          skill: "Spring Boot",
+          ratingPercentage: 70,
+          icon: "/icons/springboot.svg",
+        },
+        {
+          skill: "Flask",
+          ratingPercentage: 90,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg",
+        },
+        {
+          skill: "FastAPI",
+          ratingPercentage: 85,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg",
+        },
+        {
+          skill: "LangChain",
+          ratingPercentage: 85,
+          icon: "/icons/langchain.svg",
+        },
+      ],
+    },
+    {
+      category: "DATABASES",
+      skills: [
+        {
+          skill: "MySQL",
+          ratingPercentage: 95,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
+        },
+        {
+          skill: "MongoDB",
+          ratingPercentage: 100,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
+        },
+        {
+          skill: "PostgreSQL",
+          ratingPercentage: 95,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
+        },
+        {
+          skill: "Firebase",
+          ratingPercentage: 100,
+          icon: "https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png",
+        },
+      ],
+    },
+    {
+      category: "MACHINE LEARNING LIBRARIES",
+      skills: [
+        {
+          skill: "Keras",
+          ratingPercentage: 85,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg",
+        },
+        // {
+        //   skill: "TensorFlow",
+        //   ratingPercentage: 80,
+        //   icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg",
+        // },
+        {
+          skill: "Pandas",
+          ratingPercentage: 70,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg",
+        },
+        {
+          skill: "Numpy",
+          ratingPercentage: 70,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg",
+        },
+        {
+          skill: "Scikit-Learn",
+          ratingPercentage: 80,
+          icon: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+        },
+        {
+          skill: "Matplotlib",
+          ratingPercentage: 50,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg",
+        },
+      ],
+    },
+    {
+      category: "REAL-TIME LIBRARIES",
+      skills: [
+        {
+          skill: "Socket.IO",
+          ratingPercentage: 20,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/socketio/socketio-original.svg",
+        },
+      ],
+    },
+    {
+      category: "BIG DATA & ANALYTICS",
+      skills: [
+        {
+          skill: "Hadoop",
+          ratingPercentage: 85,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/hadoop/hadoop-original.svg",
+        },
+        {
+          skill: "Apache Spark",
+          ratingPercentage: 85,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/apachespark/apachespark-original.svg",
+        },
+        {
+          skill: "Elasticsearch",
+          ratingPercentage: 90,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/elasticsearch/elasticsearch-original.svg",
+        },
+        {
+          skill: "Splunk",
+          ratingPercentage: 60,
+          icon: "/icons/splunk.svg",
+        },
+      ],
+    },
+    {
+      category: "AI & NLP TOOLS",
+      skills: [
+        {
+          skill: "OpenAI",
+          ratingPercentage: 95,
+          icon: "/icons/openai.svg",
+        },
+        {
+          skill: "LangGraph",
+          ratingPercentage: 85,
+          icon: "/icons/langgraph.svg",
+        },
+      ],
+    },
+    {
+      category: "CLOUD & DEVOPS",
+      skills: [
+        {
+          skill: "Amazon AWS",
+          ratingPercentage: 95,
+          icon: "/icons/amazonwebservices.svg",
+        },
+        {
+          skill: "Docker",
+          ratingPercentage: 90,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
+        },
+        {
+          skill: "Kubernetes",
+          ratingPercentage: 50,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg",
+        },
+        {
+          skill: "Jenkins",
+          ratingPercentage: 70,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg",
+        },
+        {
+          skill: "Maven",
+          ratingPercentage: 80,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/maven/maven-original.svg",
+        },
+        {
+          skill: "Linux",
+          ratingPercentage: 100,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
+        },
+        {
+          skill: "Powershell",
+          ratingPercentage: 100,
+          icon: "https://img.shields.io/badge/PowerShell-012456?style=flat-square&logo=powershell&logoColor=white",
+        },
+      ],
+    },
+    {
+      category: "VERSION CONTROL & TOOLS",
+      skills: [
+        {
+          skill: "Github",
+          ratingPercentage: 100,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg",
+        },
+        {
+          skill: "Bitbucket",
+          ratingPercentage: 95,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bitbucket/bitbucket-original.svg",
+        },
+        {
+          skill: "JIRA",
+          ratingPercentage: 85,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg",
+        },
+        // {
+        //   skill: "XL Release",
+        //   ratingPercentage: 60,
+        //   icon: "https://via.placeholder.com/48?text=XL+Release",
+        // },
+      ],
+    },
+    {
+      category: "TESTING",
+      skills: [
+        {
+          skill: "JUnit",
+          ratingPercentage: 90,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/junit/junit-original.svg",
+        },
+        {
+          skill: "Selenium",
+          ratingPercentage: 70,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg",
+        },
+        {
+          skill: "Jest",
+          ratingPercentage: 80,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg",
+        },
+      ],
+    },
+  ];  
+  
 
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
@@ -103,6 +382,7 @@ const Resume = (props) => {
             </a>
           )}
         </div>
+        <br />
       </div>
     );
   };
@@ -121,42 +401,45 @@ const Resume = (props) => {
       <div className="work-experience-container">
         <ResumeHeading
           heading={"Headstarter AI"}
-          subHeading={"Software Engineer Fellow | Remote"}
+          subHeading={"Software Engineer Fellow | Chicago, Illinois, United States"}
           fromDate={"Jul 2024"}
           toDate={"Aug 2024"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Built and deployed five AI projects within five weeks following agile methodologies with CI/CD practices.<br />
-            - Led a team of three to develop an interactive customer support agent using Next.js, implementing a custom RAG pipeline with OpenAI and Pinecone that responds based on a company's knowledge base.<br />
-            - Engineered an automated web scraper to extract and upsert professor data from Rate My Professor into a Pinecone vector index, integrating it with a RAG pipeline using LangChain and OpenAI GPT-4 for real-time query insights.
+            &rarr; Delivered 4+ full-stack web applications by leading a 3-member team adopting Agile (Scrum) with CI/CD pipelines, cutting average deployment time by 40%.<br />
+            &rarr; Engineered AI-driven solutions using Next.js, Node.js, and OpenAI APIs to deliver real-time intelligent responses, boosting chatbot answer accuracy by 35% and enhancing user engagement.<br />
+            &rarr; Integrated a modern tech stack across projects, including Firebase for real-time data and authentication, Stripe for secure payments, and Tailwind CSS for responsive UI design.<br />
           </span>
         </div>
+        <br/>
         <ResumeHeading
           heading={"Wipro Limited"}
-          subHeading={"Senior Software Engineer | Bengaluru, Karnataka"}
+          subHeading={"Senior Software Engineer | Bengaluru, Karnataka, India"}
           fromDate={"Sep 2019"}
           toDate={"Oct 2022"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Successfully migrated 32 on-premises applications from various Squads to AWS hybrid cloud from Fujitsu, achieving a 25% reduction in system downtime using SDLC.<br />
-            - Developed standards for disaster recovery systems and performed gap analysis with a 12-member team to implement recovery plans, maintaining 90% application functionality.<br />
-            - Specialized in Infrastructure, Database, Application, and Security areas for applications deployed on Fujitsu cloud for Australia's Road and Maritime Services government customer.<br />
-            - Created comprehensive technical documentation for disaster recovery plans and middleware APIs to enhance cross-team collaboration and onboarding efficiency.<br />
+            &rarr; Spearheaded the migration of 30+ client‑facing web applications to an AWS hybrid cloud, with a strong focus on responsive design and optimized UI performance, reducing system downtime by 25%.<br />
+            &rarr; Standardized disaster recovery protocols for critical UI components and led gap analyses with cross‑functional teams to ensure 90% application functionality post‑migration.<br />
+            &rarr; Optimized cloud resource allocation for frontend assets and dynamic content, cutting operational costs by 20% while maintaining rigorous performance benchmarks.<br />
+            &rarr; Managed Agile processes using JIRA and Scrum methodologies—overseeing sprint planning, estimation, daily standups, and retrospectives—to boost team efficiency by 30%.<br />
+            &rarr; Automated deployment workflows for web applications on AWS, reducing manual intervention by 50% and ensuring reliable, rapid releases.<br />
           </span>
         </div>
+        <br/>
         <ResumeHeading
           heading={"Wipro Limited"}
-          subHeading={"Software Engineer | Bengaluru, Karnataka"}
+          subHeading={"Software Engineer | Bengaluru, Karnataka, India"}
           fromDate={"Oct 2022"}
           toDate={"May 2023"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Led Agile Squads/Studio implementations using JIRA, managing sprint planning with story point estimation, standups, retrospectives, playbacks, and sprint dashboards.<br />
-            - Developed front-end application UI components including landing pages and sign-up/sign-in interfaces.<br />
-            - Monitored project build progress through project schedules and weekly reporting, incorporating Studio dashboards, status updates, risk assessments, and resolution tracking in Squads.<br />
+            &rarr; Implemented interactive UI components using modern frontend framework Next.js with React library to enhance user engagement and streamline navigation—resulting in a 15% reduction in page load times.<br />
+            &rarr; Maintained detailed documentation focused on scalable frontend architectures and efficient knowledge transfer, reducing new developer onboarding time by 30%.<br />
+            &rarr; Reengineered the UI/UX of client-facing web applications using Next.js, React.js, and Tailwind CSS, improving component rendering efficiency and responsiveness, which increased user session duration by 20% and reduced bounce rates by 15%.<br />
           </span>
         </div>
       </div>
@@ -173,6 +456,7 @@ const Resume = (props) => {
             {categoryDetail.skills.map((skill, skillIndex) => (
               <div className="skill-parent" key={skillIndex}>
                 <div className="heading-bullet"></div>
+                <img src={skill.icon} alt={skill.skill} className="skill-icon" />
                 <span>{skill.skill}</span>
                 <div className="skill-percentage">
                   <div
@@ -212,7 +496,7 @@ const Resume = (props) => {
       title: "Text2Block",
       duration: { fromDate: "Dec 2024", toDate: "Jan 2025" },
       description:
-        "Text2Block is a web app to convert text prompts into visual flowcharts, achieving 100+ active users daily since deployment on render.com, simplifying complex ideas into visuals for enhanced understanding.",
+        "Text2Block is a web app to convert text prompts into visual flowcharts, achieving 50+ active users daily since deployment on render.com, simplifying complex ideas into visuals for enhanced understanding.",
       websiteLink: "https://text2block-kie0.onrender.com/",
     },
     {
@@ -276,9 +560,9 @@ const Resume = (props) => {
         heading={"Illinois Institute of Technology"}
         subHeading={
           <>
-            {"MASTER OF COMPUTER SCIENCE"}
+            {"MASTER'S IN COMPUTER SCIENCE"}
             <br />
-            {"Chicago, Illinois"}
+            {"Chicago, Illinois, United States"}
           </>
         }
         fromDate={"Aug 2023"}
@@ -288,9 +572,9 @@ const Resume = (props) => {
         heading={"Reva University"}
         subHeading={
           <>
-            {"BACHELOR OF COMPUTER SCIENCE & INFORMATION TECHNOLOGY"}
+            {"BACHELOR'S IN COMPUTER SCIENCE & INFORMATION TECHNOLOGY"}
             <br />
-            {"Bengaluru, Karnataka"}
+            {"Bengaluru, Karnataka, India"}
           </>
         }
         fromDate={"Mar 2015"}

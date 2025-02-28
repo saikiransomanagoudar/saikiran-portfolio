@@ -10,20 +10,24 @@ export default function AboutMe(props) {
   };
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-    const SCREEN_CONSTANTS = {
-      description: `
-        Experienced Software Engineer with 4+ years at Wipro specializing in Cloud Computing and AI. Track record of delivering impactful solutions through AWS applications and AI implementations. Strong expertise in full-stack development using React.js, Next.js, Java, and RESTful APIs. Currently pursuing Master's in Computer Science at Illinois Tech.
+  const SCREEN_CONSTANTS = {
+    description: `
+        Skilled, dedicated, and results-driven Senior Software Engineer with 4+ years of experience in developing, optimizing, and deploying intelligent applications and scalable systems. 
+        Proven expertise in leveraging machine learning, natural language processing (NLP), and automation to build high-performance AI solutions. 
+        Skilled in full-stack development with Python, Java, JavaScript, TypeScript, utilizing frameworks such as Django, Spring Boot, and Node.js to create robust and efficient applications. 
+        Adept at database management with MongoDB, MySQL, Firebase, and Pinecone, ensuring seamless data processing and retrieval. Experienced in cloud computing with AWS, Kubernetes, and Docker, implementing secure and scalable infrastructure solutions. Strong focus on DevOps practices, CI/CD pipelines, and software reliability to streamline deployments and optimize performance. Proven ability to lead cross-functional teams, drive Agile development processes, and deliver innovative software solutions that enhance operational efficiency. 
+        Committed to technical excellence, problem-solving, and delivering impactful AI-driven applications that improve business outcomes and user experience.
       `,
-      highlights: {
-        bullets: [
-          "Optimized application performance through AWS migrations",
-          "Led multiple Agile cloud transformation projects",
-          "Developed automated AI tools and web scrapers",
-          "Expert in Java, React, AWS, and API integration",
-        ],
-        heading: "Here are a few highlights:",
-      },
-    }; 
+    highlights: {
+      bullets: [
+        "Delivered several full-stack web applications using Agile and CI/CD practices",
+        "Contributed to a smooth AWS hybrid cloud migration for 30+ applications, reducing downtime",
+        "Integrated AI features into chatbots to enhance customer engagement",
+        "Streamlined deployment workflows and documentation to support team collaboration",
+      ],
+      heading: "Here are a few highlights:",
+    },
+  };
 
   const renderHighlight = () => {
     return SCREEN_CONSTANTS.highlights.bullets.map((value, i) => (
@@ -56,13 +60,13 @@ export default function AboutMe(props) {
             <div className="about-me-options">
               <button
                 className="btn primary-btn"
-                onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+                onClick={() => ScrollService.scrollToHireMe()}
               >
                 {" "}
                 Hire Me{" "}
               </button>
               <a
-                href="https://drive.google.com/file/d/1fntohypU5JXZj6gxVvR_QpcyyFt1_u-H/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1uRQjwj-a5UPRy_nX07NgQ7c3Nc4jvgif/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >

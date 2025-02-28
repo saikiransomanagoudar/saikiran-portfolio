@@ -134,7 +134,7 @@ export default function ContactMe(props) {
         </div>
       </div>
       <div className="scroll-to-home">
-        <button onClick={() => ScrollService.scrollHandler.scrollToHome()}>
+        <button onClick={() => ScrollService.scrollToHome()}>
           <i className="fa fa-arrow-up"></i>
         </button>
       </div>

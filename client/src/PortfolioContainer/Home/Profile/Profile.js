@@ -47,10 +47,14 @@ export default function Profile() {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Software Engineer", 1500,
-                    "AWS Certified Cloud Practitioner", 1500,
-                    "Full-Stack Developer", 1500,
-                    "AI Enthusiast", 1500,
+                    "Software Engineer",
+                    1500,
+                    "Cloud & DevOps Practitioner",
+                    1500,
+                    "Full-Stack Developer",
+                    1500,
+                    "AI & NLP Integrator",
+                    1500,
                   ]}
                 />
               </h1>
@@ -67,7 +71,7 @@ export default function Profile() {
               Contact Me
             </button>
             <a
-              href="https://drive.google.com/file/d/1fntohypU5JXZj6gxVvR_QpcyyFt1_u-H/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1uRQjwj-a5UPRy_nX07NgQ7c3Nc4jvgif/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               download={"Saikiran_Somanagoudar_Resume.pdf"}
