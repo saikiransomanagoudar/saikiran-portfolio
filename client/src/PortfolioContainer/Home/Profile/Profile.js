@@ -68,7 +68,7 @@ export default function Profile() {
               className="btn primary-btn"
               onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             >
-              Contact Me
+              Get in Touch
             </button>
             <a
               href="https://drive.google.com/file/d/1uRQjwj-a5UPRy_nX07NgQ7c3Nc4jvgif/view?usp=sharing"
@@ -76,7 +76,7 @@ export default function Profile() {
               rel="noopener noreferrer"
               download={"Saikiran_Somanagoudar_Resume.pdf"}
             >
-              <button className="btn highlighted-btn">Get Resume</button>
+              <button className="btn highlighted-btn">View Full Resume</button>
             </a>
           </div>
         </div>

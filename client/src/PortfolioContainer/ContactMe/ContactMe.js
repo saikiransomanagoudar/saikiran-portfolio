@@ -50,13 +50,15 @@ export default function ContactMe(props) {
         message,
       };
       console.log("Data to be sent:", data);
-      const baseUrl = process.env.REACT_APP_API_URL || "http://saikiran-portfolio-b078b74c7ad5.herokuapp.com";
+      const baseUrl =
+        process.env.REACT_APP_API_URL ||
+        "http://saikiran-portfolio-b078b74c7ad5.herokuapp.com";
       const res = await axios.post(`${baseUrl}/contact`, data, {
         headers: {
-          'Content-Type': 'application/json'
-        }
+          "Content-Type": "application/json",
+        },
       });
-      
+
       if (res.status === 200 && res.data.msg) {
         setBanner(res.data.msg);
         toast.success(res.data.msg);
@@ -112,12 +114,33 @@ export default function ContactMe(props) {
           </div>
           <form onSubmit={submitForm}>
             <p>{banner}</p>
-            <label htmlFor="name"><strong>Name</strong></label>
-            <input type="text" onChange={handleName} value={name} placeholder="your good name"/>
-            <label htmlFor="email"><strong>Email</strong></label>
-            <input type="text" onChange={handleEmail} value={email} placeholder="your email address"/>
-            <label htmlFor="message"><strong>Message</strong></label>
-            <textarea type="text" onChange={handleMessage} value={message} placeholder="a quick message for me"/>
+            <label htmlFor="name">
+              <strong>Name</strong>
+            </label>
+            <input
+              type="text"
+              onChange={handleName}
+              value={name}
+              placeholder="your good name"
+            />
+            <label htmlFor="email">
+              <strong>Email</strong>
+            </label>
+            <input
+              type="text"
+              onChange={handleEmail}
+              value={email}
+              placeholder="your email address"
+            />
+            <label htmlFor="message">
+              <strong>Message</strong>
+            </label>
+            <textarea
+              type="text"
+              onChange={handleMessage}
+              value={message}
+              placeholder="a quick message for me"
+            />
             <div className="send-btn">
               <button type="submit">
                 Send <i className="fa fa-paper-plane" />{" "}
@@ -134,7 +157,7 @@ export default function ContactMe(props) {
         </div>
       </div>
       <div className="scroll-to-home">
-        <button onClick={() => ScrollService.scrollToHome()}>
+        <button onClick={() => ScrollService.scrollHandler.scrollToHome()}>
           <i className="fa fa-arrow-up"></i>
         </button>
       </div>

@@ -2,7 +2,7 @@ import { TOTAL_SCREENS } from "./commonUtils";
 import { Subject } from "rxjs";
 
 export default class ScrollService {
-  // static scrollHandler = new ScrollService();
+  static scrollHandler = new ScrollService();
 
   static currentScreenBroadCaster = new Subject();
   static currentScreenFadeIn = new Subject();
@@ -11,22 +11,22 @@ export default class ScrollService {
     window.addEventListener("scroll", this.checkCurrentScreenUnderViewport);
   }
 
-  static scrollToHireMe() {
-    const contactMeScreen = document.getElementById("Contact Me");
+  scrollToHireMe = () => {
+    let contactMeScreen = document.getElementById("Contact Me");
     if (!contactMeScreen) return;
-
     ScrollService.currentScreenBroadCaster.next({ screenInView: "Contact Me" });
     contactMeScreen.scrollIntoView({ behavior: "smooth" });
-  }
+  };
 
-  static scrollToHome() {
-    const homeScreen = document.getElementById("Home");
-    if (!homeScreen) return;
-
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    ScrollService.currentScreenBroadCaster.next({ screenInView: "Home" });
+  scrollToHome = () => {
+    let homeScreen = document.getElementById("Home");
+    if (homeScreen) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        ScrollService.currentScreenBroadCaster.next({ screenInView: "Home" });
+    } else return;
     homeScreen.scrollIntoView({ behavior: "smooth" });
-  }
+    return;
+  };
 
   isElementInView = (elem, type) => {
     let rect = elem.getBoundingClientRect();
