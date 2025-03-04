@@ -162,11 +162,11 @@ const Resume = (props) => {
           ratingPercentage: 85,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg",
         },
-        // {
-        //   skill: "TensorFlow",
-        //   ratingPercentage: 80,
-        //   icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg",
-        // },
+        {
+          skill: "TensorFlow",
+          ratingPercentage: 80,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg",
+        },
         {
           skill: "Pandas",
           ratingPercentage: 70,
@@ -186,16 +186,6 @@ const Resume = (props) => {
           skill: "Matplotlib",
           ratingPercentage: 50,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg",
-        },
-      ],
-    },
-    {
-      category: "REAL-TIME LIBRARIES",
-      skills: [
-        {
-          skill: "Socket.IO",
-          ratingPercentage: 20,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/socketio/socketio-original.svg",
         },
       ],
     },
@@ -407,7 +397,7 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            &rarr; Delivered 4+ full-stack web applications by leading a 3-member team adopting Agile (Scrum) with CI/CD pipelines, cutting average deployment time by 40%.<br />
+            &rarr; Led a team to deliver 4+ full-stack web applications by leading a 3-member team adopting Agile (Scrum) with CI/CD pipelines, cutting average deployment time by 40%.<br />
             &rarr; Engineered AI-driven solutions using Next.js, Node.js, and OpenAI APIs to deliver real-time intelligent responses, boosting chatbot answer accuracy by 35% and enhancing user engagement.<br />
             &rarr; Integrated a modern tech stack across projects, including Firebase for real-time data and authentication, Stripe for secure payments, and Tailwind CSS for responsive UI design.<br />
           </span>
