@@ -1,4 +1,3 @@
-// import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import React from 'react';
 import './App.css';
 import PortfolioContainer from './PortfolioContainer/PortfolioContainer';
