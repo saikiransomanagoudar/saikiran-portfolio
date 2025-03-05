@@ -397,7 +397,7 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            &rarr; Led a team to deliver 4+ full-stack web applications by leading a 3-member team adopting Agile (Scrum) with CI/CD pipelines, cutting average deployment time by 40%.<br />
+            &rarr; Led a 3-member team to deliver 4+ full-stack web applications by adopting Agile (Scrum) methodologies with CI/CD pipelines, cutting average deployment time by 40%.<br />
             &rarr; Engineered AI-driven solutions using Next.js, Node.js, and OpenAI APIs to deliver real-time intelligent responses, boosting chatbot answer accuracy by 35% and enhancing user engagement.<br />
             &rarr; Integrated a modern tech stack across projects, including Firebase for real-time data and authentication, Stripe for secure payments, and Tailwind CSS for responsive UI design.<br />
           </span>
