@@ -1,1 +1,3 @@
-# ![Personal Portfolio](https://www.saikiransomanagoudar.com)
+# Personal Portfolio
+
+[Visit my portfolio](https://www.saikiransomanagoudar.com)
