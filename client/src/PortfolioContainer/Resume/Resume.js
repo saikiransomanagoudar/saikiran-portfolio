@@ -371,6 +371,16 @@ const Resume = (props) => {
               Visit Website
             </a>
           )}
+          {props.subredditLink && (
+            <a
+              href={props.subredditLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-github-link"
+            >
+              View Subreddit
+            </a>
+          )}
         </div>
         <br />
       </div>
@@ -475,6 +485,7 @@ const Resume = (props) => {
             toDate={projectDetails.duration.toDate}
             githubLink={projectDetails.githubLink}
             websiteLink={projectDetails.websiteLink}
+            subredditLink={projectDetails.subredditLink}
           />
         ))}
       </div>
@@ -482,6 +493,13 @@ const Resume = (props) => {
   };
 
   const projectDetails = [
+    {
+      title: "GIF Enigma",
+      duration: { fromDate: "Mar 2025", toDate: "Mar 2025" },
+      description:
+        "GIF Enigma is a word/phrase-guessing game built for Reddit community where players interpret GIFs to uncover a hidden word or phrase. A fun and engaging challenge that tests your ability to think visually and make connections.",
+      subredditLink: "https://www.reddit.com/r/PlayGIFEnigma/",
+    },
     {
       title: "Text2Block",
       duration: { fromDate: "Dec 2024", toDate: "Jan 2025" },
