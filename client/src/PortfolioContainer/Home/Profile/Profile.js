@@ -1,9 +1,31 @@
-import React from "react";
-import Typical from "react-typical";
+import React, { useState, useEffect } from "react";
 import ScrollService from "../../../utilities/ScrollService";
 import "./Profile.css";
 
 export default function Profile() {
+  const roles = [
+    "Senior Software Engineer",
+    // "Full-Stack Developer", 
+    // "AI & ML Integrator",
+    "Cloud & DevOps Practitioner"
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % roles.length);
+        setIsVisible(true);
+      }, 500);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [roles.length]);
+
   return (
     <div className="profile-container">
       <div className="profile-parent">
@@ -43,20 +65,13 @@ export default function Profile() {
             <span className="primary-text">
               {" "}
               <h1>
-                {" "}
-                <Typical
-                  loop={Infinity}
-                  steps={[
-                    "Software Engineer",
-                    1500,
-                    "Cloud & DevOps Practitioner",
-                    1500,
-                    "Full-Stack Developer",
-                    1500,
-                    "AI & NLP Integrator",
-                    1500,
-                  ]}
-                />
+                <div className="role-animation-container">
+                  <span 
+                    className={`animated-role-text ${isVisible ? 'fade-in' : 'fade-out'}`}
+                  >
+                    {roles[currentIndex]}
+                  </span>
+                </div>
               </h1>
             </span>
             <span className="profile-role-tagline">

@@ -3,7 +3,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 10%;
+    height: 700%;
     min-height: fit-content;
 }
 
@@ -30,6 +30,63 @@
     will-change: contents;
     transform: translate3d(0, 0, 0);
     text-rendering: optimizeLegibility;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role-animation-container {
+    position: relative;
+    display: inline-block;
+}
+
+.animated-role-text {
+    background: linear-gradient(45deg, #ff4500, #ff8c42, #ffa500);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 3s ease infinite;
+    transition: all 0.5s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.animated-role-text::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 6px;
+    background: linear-gradient(90deg, transparent, rgba(255, 69, 0, 0.6), transparent);
+    border-radius: 50%;
+    filter: blur(3px);
+    opacity: 0.8;
+}
+
+.animated-role-text.fade-in {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.animated-role-text.fade-out {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .primary-text{
