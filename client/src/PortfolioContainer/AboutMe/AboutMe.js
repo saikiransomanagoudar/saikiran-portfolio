@@ -8,16 +8,19 @@ export default function AboutMe(props) {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-  const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  // Subscribe to scroll service for fade-in animation
+  ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
   const SCREEN_CONSTANTS = {
     description: `
-        Skilled, dedicated, and results-driven Senior Software Engineer with 4+ years of experience in developing, optimizing, and deploying intelligent applications and scalable systems. 
-        Proven expertise in leveraging machine learning, natural language processing (NLP), and automation to build high-performance AI solutions. 
-        Skilled in full-stack development with Python, Java, JavaScript, TypeScript, utilizing frameworks such as Django, Spring Boot, and Node.js to create robust and efficient applications. 
-        Adept at database management with MongoDB, MySQL, Firebase, and Pinecone, ensuring seamless data processing and retrieval. Experienced in cloud computing with AWS, Kubernetes, and Docker, implementing secure and scalable infrastructure solutions. Strong focus on DevOps practices, CI/CD pipelines, and software reliability to streamline deployments and optimize performance. Proven ability to lead cross-functional teams, drive Agile development processes, and deliver innovative software solutions that enhance operational efficiency. 
-        Committed to technical excellence, problem-solving, and delivering impactful AI-driven applications that improve business outcomes and user experience.
+        I'm a software engineer with over 4 years of experience building reliable, scalable web applications with a strong focus on full-stack and frontend development. I began my career at Wipro, where I grew into a Senior Software Engineer role with a strong focus on building responsive, user-friendly frontend applications for enterprise-scale systems. More recently, I completed my Master’s in Computer Science at the Illinois Institute of Technology and continued sharpening my full-stack skills through a fellowship at Headstarter.
+        At Headstarter, I led a team in delivering multiple full-stack web applications using Agile (Scrum) practices. I developed AI-driven features using Next.js and the OpenAI API, integrated real-time capabilities with Firebase, and implemented Stripe for secure transactions—resulting in notable gains in performance, accuracy, and user engagement. This experience allowed me to work across the stack, combining clean UI development with scalable backend services and deployment pipelines.
+        My technical toolkit includes JavaScript, TypeScript, Java, and Python, and I’ve worked with frameworks like Next.js, Node.js, Flask, and Spring Boot. I’m also experienced with tools like Docker, Kubernetes, and AWS, and familiar with databases such as MySQL, MongoDB, and Firebase.
+        I care deeply about creating intuitive user experiences, writing maintainable code, and delivering software that’s both reliable and efficient. I enjoy collaborating in cross-functional teams, continuously improving developer workflows, and solving real-world problems through thoughtful engineering and design.
       `,
+      // I enjoy working across the stack but especially thrive in frontend development—creating clean, responsive, and user-friendly interfaces using JavaScript, TypeScript, and modern frameworks. I’ve also built and maintained backend services using Node.js, Flask, and Spring Boot when needed. My experience includes working with databases like MySQL, MongoDB, and Firebase, and deploying applications using tools like Docker, Kubernetes, and AWS.
+      // I care about writing clean, maintainable code, ensuring smooth user experiences, and building systems that are easy to evolve and support. I've contributed to projects involving CI/CD, frontend performance tuning, and cross-functional collaboration to deliver high-quality, user-centered products. 
+      // My approach to software engineering is practical, team-oriented, and design-driven—focused on solving real problems through thoughtful interfaces, clean architecture, and continuous improvement.
+      // 
     highlights: {
       bullets: [
         "Delivered several full-stack web applications using Agile and CI/CD practices",
@@ -70,7 +73,9 @@ export default function AboutMe(props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="btn highlighted-btn">View Full Resume</button>
+                <button className="btn highlighted-btn">
+                  View Full Resume
+                </button>
               </a>
             </div>
           </div>
