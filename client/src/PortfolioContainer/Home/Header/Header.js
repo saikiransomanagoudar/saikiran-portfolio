@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { TOTAL_SCREENS, GET_SCREEN_INDEX } from '../../../utilities/commonUtils';
 import ScrollService from '../../../utilities/ScrollService';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Header.css';
 
 export default function Header() {
@@ -45,7 +43,17 @@ export default function Header() {
     const switchScreen = (index, screen) => {
         let screenComponent = document.getElementById(screen.screen_name);
         if (!screenComponent) return;
-        screenComponent.scrollIntoView({ behavior: 'smooth' });
+        
+        // Calculate the position to scroll to, accounting for the fixed header
+        const headerHeight = 140; // Header height in pixels
+        const elementPosition = screenComponent.offsetTop - headerHeight;
+        
+        // Smooth scroll to the calculated position
+        window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth'
+        });
+        
         setSelectedScreen(index);
         setShowHeaderOptions(false);
     };
@@ -54,7 +62,11 @@ export default function Header() {
         <div className="header-container">
             <div className="header-parent">
                 <div className="header-hamburger" onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
-                    <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />
+                    <div className={`hamburger-icon ${showHeaderOptions ? 'open' : ''}`}>
+                        <span className="hamburger-line"></span>
+                        <span className="hamburger-line"></span>
+                        <span className="hamburger-line"></span>
+                    </div>
                 </div>
                 <div className="header-logo">
                     <span>WELCOME</span>

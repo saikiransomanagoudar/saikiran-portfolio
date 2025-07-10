@@ -1,12 +1,18 @@
 .header-container {
   display: flex;
   justify-content: space-around;
-  height: 140px;
+  height: 100px;
   color: var(--white);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   background-color: #1f2235;
   z-index: 1000;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .header-parent {
@@ -34,11 +40,57 @@
   cursor: pointer;
   font-weight: 600;
   margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.header-option:hover {
+  color: #ff4500;
 }
 
 .header-hamburger {
   display: none;
   color: var(--white);
+  cursor: pointer;
+  position: relative;
+  z-index: 5001;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-origin: center;
+}
+
+/* Animation for hamburger to cross transformation */
+.hamburger-icon.open .hamburger-line:nth-child(1) {
+  transform: translateY(10.5px) rotate(45deg);
+}
+
+.hamburger-icon.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger-icon.open .hamburger-line:nth-child(3) {
+  transform: translateY(-10.5px) rotate(-45deg);
+}
+
+.hamburger-icon:hover .hamburger-line {
+  background-color: #ff4500;
 }
 
 .header-option-separator {
@@ -51,7 +103,7 @@
 }
 
 .active-header-option {
-  color: darkorange;
+  color: #ff4500;
 }
 
 /* IPAD PRO RESPONSIVENESS */
@@ -99,12 +151,7 @@
     color: darkorange;
   }
 
-  .header-hamburger-bars {
-    font-size: 36px;
-    cursor: pointer;
-    margin: 0px 10px;
-    color: var(--white);
-  }
+
 
   .show-hamburger-options {
     left: 0;
