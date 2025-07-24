@@ -4,7 +4,7 @@ import "./Profile.css";
 
 export default function Profile() {
   const roles = [
-    "Senior Software Engineer",
+    "Software Engineer",
     // "Full-Stack Developer", 
     // "AI & ML Integrator",
     "Cloud & DevOps Practitioner"
