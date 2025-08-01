@@ -69,7 +69,7 @@ export default function AboutMe(props) {
                 Get in Touch{" "}
               </button>
               <a
-                href="https://drive.google.com/file/d/1fJz1SmPAQ5x0WaTrIRxHumB59oeZDf7j/view?usp=sharing"
+                href="https://drive.google.com/file/d/1fJz1SmPAQ5x0WaTrIRxHumB59oeZDf7j/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
