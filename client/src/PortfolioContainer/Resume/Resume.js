@@ -13,14 +13,9 @@ const Resume = (props) => {
       category: "LANGUAGES",
       skills: [
         {
-          skill: "JavaScript",
-          ratingPercentage: 100,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-        },
-        {
-          skill: "TypeScript",
-          ratingPercentage: 80,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+          skill: "Java",
+          ratingPercentage: 90,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
         },
         {
           skill: "Python",
@@ -28,9 +23,14 @@ const Resume = (props) => {
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
         },
         {
-          skill: "Java",
-          ratingPercentage: 90,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+          skill: "JavaScript",
+          ratingPercentage: 95,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        },
+        {
+          skill: "TypeScript",
+          ratingPercentage: 80,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
         },
         {
           skill: "C",
@@ -50,17 +50,12 @@ const Resume = (props) => {
       ],
     },
     {
-      category: "FRONTEND",
+      category: "WEB & STYLING",
       skills: [
         {
           skill: "React",
           ratingPercentage: 100,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
-        },
-        {
-          skill: "Redux",
-          ratingPercentage: 85,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
         },
         {
           skill: "Next.js",
@@ -73,64 +68,29 @@ const Resume = (props) => {
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg",
         },
         {
-          skill: "HTML5",
+          skill: "Redux",
+          ratingPercentage: 85,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+        },
+        {
+          skill: "HTML",
           ratingPercentage: 100,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
         },
         {
-          skill: "CSS3",
+          skill: "CSS",
           ratingPercentage: 100,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
         },
-      ],
-    },
-    {
-      category: "STYLING",
-      skills: [
         {
-          skill: "Tailwind",
+          skill: "Tailwind CSS",
           ratingPercentage: 100,
           icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
         },
-        {
-          skill: "Material UI",
-          ratingPercentage: 85,
-          icon: "https://mui.com/static/logo.png",
-        }
       ],
     },
     {
-      category: "BACKEND",
-      skills: [
-        {
-          skill: "Node.js",
-          ratingPercentage: 100,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
-        },
-        {
-          skill: "Spring Boot",
-          ratingPercentage: 70,
-          icon: "/icons/springboot.svg",
-        },
-        {
-          skill: "Flask",
-          ratingPercentage: 90,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg",
-        },
-        {
-          skill: "FastAPI",
-          ratingPercentage: 85,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg",
-        },
-        {
-          skill: "LangChain",
-          ratingPercentage: 85,
-          icon: "/icons/langchain.svg",
-        },
-      ],
-    },
-    {
-      category: "DATABASES",
+      category: "DATABASES & DATA",
       skills: [
         {
           skill: "MySQL",
@@ -138,104 +98,124 @@ const Resume = (props) => {
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
         },
         {
-          skill: "MongoDB",
-          ratingPercentage: 100,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
-        },
-        {
           skill: "PostgreSQL",
           ratingPercentage: 95,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
         },
         {
-          skill: "Firebase",
+          skill: "MongoDB",
           ratingPercentage: 100,
-          icon: "https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png",
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
         },
+        // {
+        //   skill: "Firebase",
+        //   ratingPercentage: 100,
+        //   icon: "https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png",
+        // },
       ],
     },
     {
-      category: "MACHINE LEARNING LIBRARIES",
+      category: "BACKEND & CLOUD",
       skills: [
         {
-          skill: "Keras",
-          ratingPercentage: 85,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg",
-        },
-        {
-          skill: "TensorFlow",
-          ratingPercentage: 80,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg",
-        },
-        {
-          skill: "Pandas",
-          ratingPercentage: 70,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg",
-        },
-        {
-          skill: "Numpy",
-          ratingPercentage: 70,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg",
-        },
-        {
-          skill: "Scikit-Learn",
-          ratingPercentage: 80,
-          icon: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
-        },
-        {
-          skill: "Matplotlib",
-          ratingPercentage: 50,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg",
-        },
-      ],
-    },
-    {
-      category: "BIG DATA & ANALYTICS",
-      skills: [
-        {
-          skill: "Hadoop",
-          ratingPercentage: 85,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/hadoop/hadoop-original.svg",
-        },
-        {
-          skill: "Apache Spark",
-          ratingPercentage: 85,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/apachespark/apachespark-original.svg",
-        },
-        {
-          skill: "Elasticsearch",
+          skill: "Flask",
           ratingPercentage: 90,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/elasticsearch/elasticsearch-original.svg",
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg",
         },
         {
-          skill: "Splunk",
-          ratingPercentage: 60,
-          icon: "/icons/splunk.svg",
+          skill: "Node.js",
+          ratingPercentage: 100,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+        },
+        {
+          skill: "FastAPI",
+          ratingPercentage: 85,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg",
+        },
+        {
+          skill: "Spring Boot",
+          ratingPercentage: 70,
+          icon: "/icons/springboot.svg",
+        },
+        {
+          skill: "Amazon AWS",
+          ratingPercentage: 95,
+          icon: "/icons/amazonwebservices.svg",
         },
       ],
     },
+    // {
+    //   category: "MACHINE LEARNING LIBRARIES",
+    //   skills: [
+    //     {
+    //       skill: "Keras",
+    //       ratingPercentage: 85,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/keras/keras-original.svg",
+    //     },
+    //     {
+    //       skill: "TensorFlow",
+    //       ratingPercentage: 80,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg",
+    //     },
+    //     {
+    //       skill: "Pandas",
+    //       ratingPercentage: 70,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg",
+    //     },
+    //     {
+    //       skill: "Numpy",
+    //       ratingPercentage: 70,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg",
+    //     },
+    //     {
+    //       skill: "Scikit-Learn",
+    //       ratingPercentage: 80,
+    //       icon: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+    //     },
+    //     {
+    //       skill: "Matplotlib",
+    //       ratingPercentage: 50,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/matplotlib/matplotlib-original.svg",
+    //     },
+    //   ],
+    // },
+    // {
+    //   category: "BIG DATA & ANALYTICS",
+    //   skills: [
+    //     {
+    //       skill: "Hadoop",
+    //       ratingPercentage: 85,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/hadoop/hadoop-original.svg",
+    //     },
+    //     {
+    //       skill: "Apache Spark",
+    //       ratingPercentage: 85,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/apachespark/apachespark-original.svg",
+    //     },
+    //     {
+    //       skill: "Splunk",
+    //       ratingPercentage: 60,
+    //       icon: "/icons/splunk.svg",
+    //     },
+    //   ],
+    // },
     {
-      category: "AI & NLP TOOLS",
+      category: "AI & DEV TOOLS",
       skills: [
+        // {
+        //   skill: "OpenAI",
+        //   ratingPercentage: 95,
+        //   icon: "/icons/openai.svg",
+        // },
         {
-          skill: "OpenAI",
-          ratingPercentage: 95,
-          icon: "/icons/openai.svg",
+          skill: "LangChain",
+          ratingPercentage: 85,
+          icon: "/icons/langchain.svg",
         },
         {
           skill: "LangGraph",
           ratingPercentage: 85,
           icon: "/icons/langgraph.svg",
-        },
-      ],
-    },
-    {
-      category: "CLOUD & DEVOPS",
-      skills: [
-        {
-          skill: "Amazon AWS",
-          ratingPercentage: 95,
-          icon: "/icons/amazonwebservices.svg",
         },
         {
           skill: "Docker",
@@ -243,19 +223,9 @@ const Resume = (props) => {
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
         },
         {
-          skill: "Kubernetes",
-          ratingPercentage: 50,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg",
-        },
-        {
-          skill: "Jenkins",
-          ratingPercentage: 70,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg",
-        },
-        {
-          skill: "Maven",
-          ratingPercentage: 80,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/maven/maven-original.svg",
+          skill: "Elasticsearch",
+          ratingPercentage: 90,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/elasticsearch/elasticsearch-original.svg",
         },
         {
           skill: "Linux",
@@ -269,6 +239,26 @@ const Resume = (props) => {
         },
       ],
     },
+    // {
+    //   category: "CLOUD & DEVOPS",
+    //   skills: [
+        // {
+        //   skill: "Kubernetes",
+        //   ratingPercentage: 50,
+        //   icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg",
+        // },
+        // {
+        //   skill: "Jenkins",
+        //   ratingPercentage: 70,
+        //   icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg",
+        // },
+        // {
+        //   skill: "Maven",
+        //   ratingPercentage: 80,
+        //   icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/maven/maven-original.svg",
+        // },
+    //   ],
+    // },
     {
       category: "VERSION CONTROL & TOOLS",
       skills: [
@@ -277,11 +267,11 @@ const Resume = (props) => {
           ratingPercentage: 100,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg",
         },
-        {
-          skill: "Bitbucket",
-          ratingPercentage: 95,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bitbucket/bitbucket-original.svg",
-        },
+        // {
+        //   skill: "Bitbucket",
+        //   ratingPercentage: 95,
+        //   icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bitbucket/bitbucket-original.svg",
+        // },
         {
           skill: "JIRA",
           ratingPercentage: 85,
@@ -294,26 +284,26 @@ const Resume = (props) => {
         // },
       ],
     },
-    {
-      category: "TESTING",
-      skills: [
-        {
-          skill: "JUnit",
-          ratingPercentage: 90,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/junit/junit-original.svg",
-        },
-        {
-          skill: "Selenium",
-          ratingPercentage: 70,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg",
-        },
-        {
-          skill: "Jest",
-          ratingPercentage: 80,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg",
-        },
-      ],
-    },
+    // {
+    //   category: "TESTING",
+    //   skills: [
+    //     {
+    //       skill: "JUnit",
+    //       ratingPercentage: 90,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/junit/junit-original.svg",
+    //     },
+    //     {
+    //       skill: "Selenium",
+    //       ratingPercentage: 70,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg",
+    //     },
+    //     {
+    //       skill: "Jest",
+    //       ratingPercentage: 80,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg",
+    //     },
+    //   ],
+    // },
   ];  
   
 
@@ -389,8 +379,8 @@ const Resume = (props) => {
 
   const resumeBullets = [
     { label: "Education", logoSrc: "education.svg" },
-    { label: "Work History", logoSrc: "work-history.svg" },
-    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
+    { label: "Work Experience", logoSrc: "work-history.svg" },
+    { label: "Technical Skills", logoSrc: "programming-skills.svg" },
     { label: "Projects Completed", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
     { label: "Extracurriculars", logoSrc: "typing.svg" }
@@ -400,16 +390,17 @@ const Resume = (props) => {
     return (
       <div className="work-experience-container">
         <ResumeHeading
-          heading={"Headstarter AI"}
+          heading={"Headstarter"}
           subHeading={"Software Engineer Fellow | Chicago, Illinois, United States"}
           fromDate={"Jul 2024"}
           toDate={"Aug 2024"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            &rarr; Led a 3-member team to deliver 4+ full-stack web applications by adopting Agile (Scrum) methodologies with CI/CD pipelines, cutting average deployment time by 40%.<br />
-            &rarr; Engineered AI-driven solutions using Next.js, Node.js, and OpenAI APIs to deliver real-time intelligent responses, boosting chatbot answer accuracy by 35% and enhancing user engagement.<br />
-            &rarr; Integrated a modern tech stack across projects, including Firebase for real-time data and authentication, Stripe for secure payments, and Tailwind CSS for responsive UI design.<br />
+            &rarr; Engineered an AI-powered chatbot solution leveraging Next.js and OpenAI API to deliver real-time, context-aware responses, improving answer accuracy by 35% and increasing user engagement by 30% across targeted use cases.<br />
+            &rarr; Enhanced application scalability and performance by integrating Firebase for real-time data synchronization and authentication, achieving 25% faster page load speeds and enabling secure transactions through Stripe.<br />
+            &rarr; Supported the software development life cycle (SDLC) by collaborating with teammates to design and implement robust, scalable, and maintainable software solutions and write clean, efficient, and well-documented code.<br />
+            &rarr; Leveraged high attention to detail, problem-solving, and analytical skills when participating in code reviews, troubleshooting software issues to identify root causes, and applying new programming languages.
           </span>
         </div>
         <br/>
@@ -421,11 +412,10 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            &rarr; Spearheaded the migration of 30+ client‑facing web applications to an AWS hybrid cloud, with a strong focus on responsive design and optimized UI performance, reducing system downtime by 25%.<br />
-            &rarr; Standardized disaster recovery protocols for critical UI components and led gap analyses with cross‑functional teams to ensure 90% application functionality post‑migration.<br />
-            &rarr; Optimized cloud resource allocation for frontend assets and dynamic content, cutting operational costs by 20% while maintaining rigorous performance benchmarks.<br />
-            &rarr; Managed Agile processes using JIRA and Scrum methodologies—overseeing sprint planning, estimation, daily standups, and retrospectives—to boost team efficiency by 30%.<br />
-            &rarr; Automated deployment workflows for web applications on AWS, reducing manual intervention by 50% and ensuring reliable, rapid releases.<br />
+            &rarr; Spearheaded the migration of 30+ client-facing applications to AWS hybrid cloud, optimizing responsive design and front-end performance to reduce downtime by 25% and elevate user experience (UX) across multiple platforms.<br />
+            &rarr; Developed and implemented standardized disaster recovery protocols for mission-critical user interface (UI) components, conducting gap analyses with cross-functional teams to achieve 90% functionality retention.<br />
+            &rarr; Optimized AWS cloud resource allocation for front-end assets and dynamic content delivery, reducing operational costs by 20% while maintaining performance benchmarks and meeting service level agreements (SLAs).<br />
+            &rarr; Automated continuous integration and deployment (CI/CD) workflows for multiple web applications on AWS, reducing manual intervention by 50% and enabling faster, more reliable production releases.<br />
           </span>
         </div>
         <br/>
@@ -437,16 +427,16 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            &rarr; Implemented interactive UI components using modern frontend framework Next.js with React library to enhance user engagement and streamline navigation—resulting in a 15% reduction in page load times.<br />
-            &rarr; Maintained detailed documentation focused on scalable frontend architectures and efficient knowledge transfer, reducing new developer onboarding time by 30%.<br />
-            &rarr; Reengineered the UI/UX of client-facing web applications using Next.js, React.js, and Tailwind CSS, improving component rendering efficiency and responsiveness, which increased user session duration by 20% and reduced bounce rates by 15%.<br />
+            &rarr; Built and deployed interactive UI components using Next.js and React to enhance user engagement and streamline navigation, reducing page load times by 15% and improving responsiveness across multiple applications.<br />
+            &rarr; Engineered UI/UX enhancements for enterprise React web applications, improving component rendering efficiency and responsiveness, increasing average user session duration by 20% while reducing bounce rates by 15%.<br />
+            &rarr; Guided the development and execution of tests for existing code to identify bugs and ensure software is secure and stable while collaborating with technical teams on end-to-end feature delivery.<br />
           </span>
         </div>
       </div>
     );
   };
 
-  // Function to render programming skills
+  // Function to render Technical Skills
   const renderProgrammingSkills = () => {
     return (
       <div ref={programmingSkillsRef} className="programming-skills-container">
@@ -636,7 +626,7 @@ const Resume = (props) => {
     console.log("Selected section index:", index);
     setSelectedBulletIndex(index);
 
-    // Scroll to programming skills container when Programming Skills is selected
+    // Scroll to Technical Skills container when Technical Skills is selected
     if (index === 2 && programmingSkillsRef.current) {
       programmingSkillsRef.current.scrollIntoView({
         behavior: "smooth",
