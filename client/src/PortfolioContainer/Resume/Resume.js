@@ -484,6 +484,23 @@ const Resume = (props) => {
 
   const projectDetails = [
     {
+      title: "Smart Retail Bookstore",
+      duration: { fromDate: "Aug 2024", toDate: "Sep 2024" },
+      description:
+        "Smart Retail Bookstore is a comprehensive e-commerce platform that combines modern web technologies with cutting-edge AI capabilities. Built on a microservices architecture, it features an intelligent multi-agent system powered by LangChain and OpenAI, providing users with personalized book recommendations, AI-powered chatbot assistance, and seamless order management.",
+        subHeading: "Technologies Used:- Frameworks - React, LangChain, FastAPI | Languages - JavaScript, Python | Styling - Tailwind CSS | APIs: Hardcover GraphQL, OpenAI gpt-4o-mini | Database - PostgreSQL",
+      githubLink: "https://github.com/saikiransomanagoudar/smart-retail-bookstore-dart-flutter"
+    },
+    {
+      title: "SmartHomes E-commerce Application",
+      duration: { fromDate: "Aug 2024", toDate: "Sep 2024" },
+      description:
+        "SmartHomes is a full-stack e-commerce web application developed using Java Servlets (backend), React.js (frontend), and Python services for integrating Gen AI tools and Elasticsearch. The platform supports various functionalities for customers, salesmen, and store managers. Features include product management, order placement, reviews, analytics, ticket handling, and advanced search and recommendations using AI-powered tools.",
+      subHeading:
+        "Technologies Used:- Frameworks - React, Jakarta EE | Languages - JavaScript (Runtime environment: NodeJS), Java, Python | Styling - Tailwind CSS | Backend - Java Servlets | Databases - MySQL, MongoDB",
+      githubLink: "https://github.com/saikiransomanagoudar/smart-homes"
+    },
+    {
       title: "GIF Enigma",
       duration: { fromDate: "Mar 2025", toDate: "Mar 2025" },
       description:
@@ -498,14 +515,6 @@ const Resume = (props) => {
       websiteLink: "https://text2block-kie0.onrender.com/",
     },
     {
-      title: "Smart Retail Bookstore",
-      duration: { fromDate: "Aug 2024", toDate: "Sep 2024" },
-      description:
-        "Smart Retail Bookstore is a full-stack web application that uses AI powered recommendation to suggest books to users based on their preferences. The project leverages a collaborative filtering algorithm to provide personalized recommendations to users. It also includes features like user authentication, built in chatbot with multiple agents (Orders Agent, Recommendation Agent, Fraud/Damage Agent), and cart management.",
-        subHeading: "Technologies Used:- Frameworks - Flutter, LangGraph, LangChain, FastAPI | Languages - Dart, Python | Styling - Tailwind CSS | APIs: Hardcover GraphQL, OpenAI gpt-4o-mini | Database - PostgreSQL",
-      githubLink: "https://github.com/saikiransomanagoudar/smart-retail-bookstore-dart-flutter"
-    },
-    {
       title: "Medical Advice Chatbot",
       duration: { fromDate: "Oct 2024", toDate: "Oct 2024" },
       description:
@@ -513,15 +522,6 @@ const Resume = (props) => {
       subHeading:
         "Technologies Used:- Frameworks - Rasa, LangGraph | Languages - Python | APIs - OpenAI gpt-3.5 | Library - dotenv",
       githubLink: "https://github.com/saikiransomanagoudar/medical-advice"
-    },
-    {
-      title: "Smart Homes | E-commerce Application",
-      duration: { fromDate: "Aug 2024", toDate: "Sep 2024" },
-      description:
-        "Smart Homes is a full-stack web application that simulates an e-commerce platform for purchasing smart home products. It enables users to explore a wide range of smart home devices, add them to their cart, and complete orders seamlessly. The project follows the MVC (Model-View-Controller) architecture, with MongoDB and MySQL databases handling data storage and management, providing a robust and scalable solution for managing both product and user data.",
-      subHeading:
-        "Technologies Used:- Frameworks - React, Jakarta EE | Languages - JavaScript (Runtime environment: NodeJS), Java, Python | Styling - Tailwind CSS | Backend - Java Servlets | Databases - MySQL, MongoDB",
-      githubLink: "https://github.com/saikiransomanagoudar/smart-homes"
     },
     {
       title: "Recallect | AI-Powered Flashcard App",
@@ -558,7 +558,7 @@ const Resume = (props) => {
         heading={"Illinois Institute of Technology"}
         subHeading={
           <>
-            {"MASTER'S IN COMPUTER SCIENCE"}
+            {"MASTER'S (M.A.S.) IN COMPUTER SCIENCE"}
             <br />
             {"Chicago, Illinois, United States"}
           </>
@@ -570,19 +570,13 @@ const Resume = (props) => {
         heading={"Reva University"}
         subHeading={
           <>
-            {"BACHELOR'S IN COMPUTER SCIENCE & INFORMATION TECHNOLOGY"}
+            {"BACHELOR OF TECHNOLOGY (BTECH) IN COMPUTER SCIENCE & ENGINEERING"}
             <br />
             {"Bengaluru, Karnataka, India"}
           </>
         }
         fromDate={"Mar 2015"}
         toDate={"Jun 2019"}
-      />
-      <ResumeHeading
-        heading={"Navodaya Vidyalaya Samiti"}
-        subHeading={"HIGH SCHOOL"}
-        fromDate={"Jun 2008"}
-        toDate={"Mar 2015"}
       />
     </div>,
     <div className="resume-screen-container" key="work-experience">

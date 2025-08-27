@@ -14,7 +14,7 @@
 }
 
 .profile-details-name{
-    font-size: 24px;
+    font-size: 28px;
     font-family: "Poppins SemiBold";
 }
 
@@ -137,14 +137,44 @@
     transition: 1s ease-out;
   }
 
-  .colz .colz-icon i{
-    color: white;
-    padding: 10px;
-    padding-left: 0px;
+  .colz .colz-icon {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 30px;
   }
 
-  .colz .colz-icon i:hover{
-    transform: scale(1.5)
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .social-icon {
+    width: 22px;
+    height: 22px;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .social-link:hover .social-icon {
+    transform: scale(1.1);
+  }
+
+  /* GitHub hover - dark gray */
+  .social-link:nth-child(1):hover .social-icon {
+    color: #333;
+  }
+
+  /* LinkedIn hover - blue */
+  .social-link:nth-child(2):hover .social-icon {
+    color: #0077b5;
+  }
+
+  /* YouTube hover - red */
+  .social-link:nth-child(3):hover .social-icon {
+    color: #ff0000;
   }
 
   /* iPad Pro */
