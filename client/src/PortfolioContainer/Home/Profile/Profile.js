@@ -96,7 +96,7 @@ export default function Profile() {
               Get in Touch
             </button>
             <a
-              href="https://drive.google.com/file/d/1fJz1SmPAQ5x0WaTrIRxHumB59oeZDf7j/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1PrnYE3meU8Cj-jKmKM9Aq1z52D9BtKgt/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               download={"Saikiran_Somanagoudar_resume.pdf"}
