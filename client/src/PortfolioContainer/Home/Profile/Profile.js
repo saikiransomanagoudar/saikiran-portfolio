@@ -5,10 +5,9 @@ import "./Profile.css";
 export default function Profile() {
   const roles = [
     "Software Engineer",
-    "Front-End Developer", 
+    "Front-end Developer", 
     "AI & ML Integrator",
-    "Cloud & DevOps Practitioner",
-    "Full-Stack Developer",
+    "Cloud Practitioner",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

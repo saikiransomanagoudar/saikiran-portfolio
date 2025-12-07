@@ -13,35 +13,35 @@ const Resume = (props) => {
       category: "LANGUAGES",
       skills: [
         {
-          skill: "Java",
-          ratingPercentage: 90,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-        },
-        {
-          skill: "Python",
-          ratingPercentage: 85,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-        },
-        {
           skill: "JavaScript",
-          ratingPercentage: 95,
+          ratingPercentage: 100,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
         },
         {
           skill: "TypeScript",
-          ratingPercentage: 80,
+          ratingPercentage: 100,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
         },
         {
-          skill: "C",
-          ratingPercentage: 70,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+          skill: "Python",
+          ratingPercentage: 90,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
         },
         {
-          skill: "Dart",
-          ratingPercentage: 40,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg",
+          skill: "Java",
+          ratingPercentage: 85,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
         },
+        // {
+        //   skill: "C",
+        //   ratingPercentage: 70,
+        //   icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+        // },
+        // {
+        //   skill: "Dart",
+        //   ratingPercentage: 40,
+        //   icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg",
+        // },
         {
           skill: "SQL",
           ratingPercentage: 100,
@@ -58,6 +58,11 @@ const Resume = (props) => {
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
         },
         {
+          skill: "Redux",
+          ratingPercentage: 85,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+        },
+        {
           skill: "Next.js",
           ratingPercentage: 95,
           icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
@@ -66,11 +71,6 @@ const Resume = (props) => {
           skill: "Flutter",
           ratingPercentage: 40,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg",
-        },
-        {
-          skill: "Redux",
-          ratingPercentage: 85,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
         },
         {
           skill: "HTML",
@@ -93,11 +93,6 @@ const Resume = (props) => {
       category: "DATABASES & DATA",
       skills: [
         {
-          skill: "MySQL",
-          ratingPercentage: 95,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
-        },
-        {
           skill: "PostgreSQL",
           ratingPercentage: 95,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
@@ -107,6 +102,21 @@ const Resume = (props) => {
           ratingPercentage: 100,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
         },
+        {
+          skill: "Redis",
+          ratingPercentage: 80,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg",
+        },
+        {
+          skill: "MySQL",
+          ratingPercentage: 95,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
+        },
+        {
+          skill: "JSON",
+          ratingPercentage: 100,
+          icon: "https://api.iconify.design/vscode-icons/file-type-json.svg",
+        }
         // {
         //   skill: "Firebase",
         //   ratingPercentage: 100,
@@ -118,24 +128,34 @@ const Resume = (props) => {
       category: "BACKEND & CLOUD",
       skills: [
         {
-          skill: "Flask",
-          ratingPercentage: 90,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg",
-        },
-        {
           skill: "Node.js",
           ratingPercentage: 100,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+        },
+        {
+          skill: "Flask",
+          ratingPercentage: 90,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg",
         },
         {
           skill: "FastAPI",
           ratingPercentage: 85,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg",
         },
+        // {
+        //   skill: "Spring Boot",
+        //   ratingPercentage: 70,
+        //   icon: "/icons/springboot.svg",
+        // },
         {
-          skill: "Spring Boot",
-          ratingPercentage: 70,
-          icon: "/icons/springboot.svg",
+          skill: "Docker",
+          ratingPercentage: 90,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
+        },
+        {
+          skill: "RESTful APIs",
+          ratingPercentage: 100,
+          icon: "https://api.iconify.design/carbon/api.svg",
         },
         {
           skill: "Amazon AWS",
@@ -200,7 +220,7 @@ const Resume = (props) => {
     //   ],
     // },
     {
-      category: "AI & DEV TOOLS",
+      category: "AI & DEVELOPMENT TOOLS",
       skills: [
         // {
         //   skill: "OpenAI",
@@ -212,31 +232,42 @@ const Resume = (props) => {
           ratingPercentage: 85,
           icon: "/icons/langchain.svg",
         },
+        
+        // {
+        //   skill: "LangGraph",
+        //   ratingPercentage: 85,
+        //   icon: "/icons/langgraph.svg",
+        // },
+        // {
+        //   skill: "Elasticsearch",
+        //   ratingPercentage: 90,
+        //   icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/elasticsearch/elasticsearch-original.svg",
+        // },
         {
-          skill: "LangGraph",
+          skill: "GitHub",
+          ratingPercentage: 100,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg",
+        },
+        {
+          skill: "Bitbucket",
+          ratingPercentage: 95,
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bitbucket/bitbucket-original.svg",
+        },
+        {
+          skill: "JIRA",
           ratingPercentage: 85,
-          icon: "/icons/langgraph.svg",
-        },
-        {
-          skill: "Docker",
-          ratingPercentage: 90,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
-        },
-        {
-          skill: "Elasticsearch",
-          ratingPercentage: 90,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/elasticsearch/elasticsearch-original.svg",
+          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg",
         },
         {
           skill: "Linux",
           ratingPercentage: 100,
           icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
         },
-        {
-          skill: "Powershell",
-          ratingPercentage: 100,
-          icon: "https://img.shields.io/badge/PowerShell-012456?style=flat-square&logo=powershell&logoColor=white",
-        },
+        // {
+        //   skill: "Powershell",
+        //   ratingPercentage: 100,
+        //   icon: "https://img.shields.io/badge/PowerShell-012456?style=flat-square&logo=powershell&logoColor=white",
+        // },
       ],
     },
     // {
@@ -259,31 +290,26 @@ const Resume = (props) => {
         // },
     //   ],
     // },
-    {
-      category: "VERSION CONTROL & TOOLS",
-      skills: [
-        {
-          skill: "Github",
-          ratingPercentage: 100,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg",
-        },
-        // {
-        //   skill: "Bitbucket",
-        //   ratingPercentage: 95,
-        //   icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bitbucket/bitbucket-original.svg",
-        // },
-        {
-          skill: "JIRA",
-          ratingPercentage: 85,
-          icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg",
-        },
-        // {
-        //   skill: "XL Release",
-        //   ratingPercentage: 60,
-        //   icon: "https://via.placeholder.com/48?text=XL+Release",
-        // },
-      ],
-    },
+    // {
+    //   category: "VERSION CONTROL & TOOLS",
+    //   skills: [
+    //     {
+    //       skill: "GitHub",
+    //       ratingPercentage: 100,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg",
+    //     },
+    //     {
+    //       skill: "Bitbucket",
+    //       ratingPercentage: 95,
+    //       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bitbucket/bitbucket-original.svg",
+    //     },
+    //     {
+    //       skill: "XL Release",
+    //       ratingPercentage: 60,
+    //       icon: "https://via.placeholder.com/48?text=XL+Release",
+    //     },
+    //   ],
+    // },
     // {
     //   category: "TESTING",
     //   skills: [
@@ -389,7 +415,7 @@ const Resume = (props) => {
   const renderWorkExperience = () => {
     return (
       <div className="work-experience-container">
-        <ResumeHeading
+        {/* <ResumeHeading
           heading={"Headstarter"}
           subHeading={"Software Engineer Fellow | Chicago, Illinois, United States"}
           fromDate={"Jul 2024"}
@@ -397,15 +423,15 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            &rarr; Engineered an AI-powered chatbot solution leveraging Next.js and OpenAI API to deliver real-time, context-aware responses, improving answer accuracy by 35% and increasing user engagement by 30% across targeted use cases.<br />
-            &rarr; Enhanced application scalability and performance by integrating Firebase for real-time data synchronization and authentication, achieving 25% faster page load speeds and enabling secure transactions through Stripe.<br />
+            &rarr; Engineered company specific AI-powered support assistant leveraging Next.js with server-side rendering (SSR) and Claude API using retrieval-augmented generation (RAG), improving answer accuracy by 35%, boosting SEO visibility, and driving a 30% increase in user engagement through faster load speeds and optimized performance.<br />
+            &rarr; Enhanced application scalability and performance by integrating Firebase database for real-time data synchronization and authentication, achieving 25% faster page load speeds, and enabling secure transactions/payments through Stripe.<br />
             &rarr; Supported the software development life cycle (SDLC) by collaborating with teammates to design and implement robust, scalable, and maintainable software solutions and write clean, efficient, and well-documented code.<br />
             &rarr; Leveraged high attention to detail, problem-solving, and analytical skills when participating in code reviews, troubleshooting software issues to identify root causes, and applying new programming languages.
           </span>
-        </div>
-        <br/>
+        </div> */}
+        {/* <br/> */}
         <ResumeHeading
-          heading={"Wipro Limited"}
+          heading={"Wipro Technologies"}
           subHeading={"Senior Software Engineer | Bengaluru, Karnataka, India"}
           fromDate={"Sep 2019"}
           toDate={"Oct 2022"}
@@ -413,23 +439,25 @@ const Resume = (props) => {
         <div className="experience-description">
           <span className="resume-description-text">
             &rarr; Spearheaded the migration of 30+ client-facing applications to AWS hybrid cloud, optimizing responsive design and front-end performance to reduce downtime by 25% and elevate user experience (UX) across multiple platforms.<br />
-            &rarr; Developed and implemented standardized disaster recovery protocols for mission-critical user interface (UI) components, conducting gap analyses with cross-functional teams to achieve 90% functionality retention.<br />
-            &rarr; Optimized AWS cloud resource allocation for front-end assets and dynamic content delivery, reducing operational costs by 20% while maintaining performance benchmarks and meeting service level agreements (SLAs).<br />
-            &rarr; Automated continuous integration and deployment (CI/CD) workflows for multiple web applications on AWS, reducing manual intervention by 50% and enabling faster, more reliable production releases.<br />
+            {/* &rarr; Developed and implemented standardized disaster recovery protocols for mission-critical user interface (UI) components, conducting gap analyses with cross-functional teams to achieve 90% functionality retention.<br /> */}
+            &rarr; Optimized AWS cloud resource allocation for front-end assets and dynamic content delivery, reducing operational costs by 20% through improving web performance benchmarks and meeting service level agreements (SLAs).<br />
+            &rarr; Integrated AI-powered AWS CodeGuru to automate continuous integration and deployment (CI/CD) workflows code review processes for multiple web applications, reducing manual intervention by 50% and improving deployment reliability.<br />
+            &rarr; Leveraged high attention to detail, problem-solving, and analytical skills when participating in code reviews, troubleshooting software issues to identify root causes, and applying new programming languages.<br />
           </span>
         </div>
         <br/>
         <ResumeHeading
-          heading={"Wipro Limited"}
+          heading={"Wipro Technologies"}
           subHeading={"Software Engineer | Bengaluru, Karnataka, India"}
           fromDate={"Oct 2022"}
           toDate={"May 2023"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            &rarr; Built and deployed interactive UI components using Next.js and React to enhance user engagement and streamline navigation, reducing page load times by 15% and improving responsiveness across multiple applications.<br />
-            &rarr; Engineered UI/UX enhancements for enterprise React web applications, improving component rendering efficiency and responsiveness, increasing average user session duration by 20% while reducing bounce rates by 15%.<br />
-            &rarr; Guided the development and execution of tests for existing code to identify bugs and ensure software is secure and stable while collaborating with technical teams on end-to-end feature delivery.<br />
+            &rarr; Built and deployed interactive UI components using React with advanced state management and asynchronous process handling, enhancing user engagement, reducing page load times by 15% and improving website performance.<br />
+            &rarr; Engineered UI/UX enhancements for enterprise React web applications, optimizing component and DOM rendering efficiency and responsive design, increasing average user session duration by 20% while reducing bounce rates by 15%.<br />
+            &rarr; Guided the development and execution of QA tests for existing code to identify bugs and ensure software is secure and stable while collaborating with technical teams on end-to-end feature delivery.<br />
+            &rarr; Collaborated directly with product stakeholders to gather requirements and translate them into technical specifications, participating in code reviews and pair programming sessions to maintain code quality standards.<br />
           </span>
         </div>
       </div>
@@ -484,11 +512,19 @@ const Resume = (props) => {
 
   const projectDetails = [
     {
+      title: "GIF Enigma",
+      duration: { fromDate: "Mar 2025", toDate: "Mar 2025" },
+      description:
+        "GIF Enigma is a word/phrase-guessing game built for Reddit community where players interpret GIFs to uncover a hidden word or phrase. A fun and engaging challenge that tests your ability to think visually and make connections.",
+        subHeading: "Technologies Used:- Library - React | Frameworks - Devvit | Languages - TypeScript | Styling - Tailwind CSS | APIs - Gemini 2.0 flash lite, Tenor API | Deployment - Reddit Devvit Platform",
+      subredditLink: "https://www.reddit.com/r/PlayGIFEnigma/",
+    },
+    {
       title: "Smart Retail Bookstore",
       duration: { fromDate: "Aug 2024", toDate: "Sep 2024" },
       description:
         "Smart Retail Bookstore is a comprehensive e-commerce platform that combines modern web technologies with cutting-edge AI capabilities. Built on a microservices architecture, it features an intelligent multi-agent system powered by LangChain and OpenAI, providing users with personalized book recommendations, AI-powered chatbot assistance, and seamless order management.",
-        subHeading: "Technologies Used:- Frameworks - React, LangChain, FastAPI | Languages - JavaScript, Python | Styling - Tailwind CSS | APIs: Hardcover GraphQL, OpenAI gpt-4o-mini | Database - PostgreSQL",
+        subHeading: "Technologies Used:- Library - React | Frameworks - LangChain, FastAPI | Languages - JavaScript, Python | Styling - Tailwind CSS | APIs: Hardcover GraphQL, OpenAI gpt-4o-mini | Database - PostgreSQL",
       githubLink: "https://github.com/saikiransomanagoudar/smart-retail-bookstore-dart-flutter"
     },
     {
@@ -497,15 +533,8 @@ const Resume = (props) => {
       description:
         "SmartHomes is a full-stack e-commerce web application developed using Java Servlets (backend), React.js (frontend), and Python services for integrating Gen AI tools and Elasticsearch. The platform supports various functionalities for customers, salesmen, and store managers. Features include product management, order placement, reviews, analytics, ticket handling, and advanced search and recommendations using AI-powered tools.",
       subHeading:
-        "Technologies Used:- Frameworks - React, Jakarta EE | Languages - JavaScript (Runtime environment: NodeJS), Java, Python | Styling - Tailwind CSS | Backend - Java Servlets | Databases - MySQL, MongoDB",
+        "Technologies Used:- Library - React | Framework - Jakarta EE | Languages - JavaScript (Runtime environment: NodeJS), Java, Python | Styling - Tailwind CSS | Backend - Java Servlets | Databases - MySQL, MongoDB",
       githubLink: "https://github.com/saikiransomanagoudar/smart-homes"
-    },
-    {
-      title: "GIF Enigma",
-      duration: { fromDate: "Mar 2025", toDate: "Mar 2025" },
-      description:
-        "GIF Enigma is a word/phrase-guessing game built for Reddit community where players interpret GIFs to uncover a hidden word or phrase. A fun and engaging challenge that tests your ability to think visually and make connections.",
-      subredditLink: "https://www.reddit.com/r/PlayGIFEnigma/",
     },
     {
       title: "Text2Block",
@@ -558,7 +587,7 @@ const Resume = (props) => {
         heading={"Illinois Institute of Technology"}
         subHeading={
           <>
-            {"MASTER'S (M.A.S.) IN COMPUTER SCIENCE"}
+            {"MASTER'S IN COMPUTER SCIENCE"}
             <br />
             {"Chicago, Illinois, United States"}
           </>
